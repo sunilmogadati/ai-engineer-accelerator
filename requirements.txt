@@ -1,0 +1,20 @@
+# Core — needed for SQLite cells (built into Python, no install required)
+# sqlite3 is part of Python standard library
+
+# Vector Database
+chromadb>=0.4.0
+
+# ORM (optional, used in Section 8)
+sqlalchemy>=2.0
+
+# Environment variable management
+python-dotenv>=1.0
+
+# PostgreSQL driver (optional, needed only when connecting to a real PostgreSQL server)
+# psycopg2-binary>=2.9
+
+# MongoDB driver (optional, needed only when connecting to a real MongoDB server)
+# pymongo>=4.0
+
+# Redis driver (optional, needed only when connecting to a real Redis server)
+# redis>=5.0
