@@ -230,6 +230,7 @@ AI Engineer with 5 years of production backend engineering (Java/Python) now bui
 | **Business Analyst** | Requirements, stakeholder communication, domain knowledge, data analysis | Python, ML basics, LLM APIs, system design | You translate business to tech. AI teams desperately need this. |
 | **Data Analyst** | SQL, Python/R, visualization, statistics, business context | Deep learning, LLMs, embeddings, system design | You understand the data and the business. AI engineers often don't. |
 | **DBA / SQL Specialist** | Schema design, query optimization, indexing, data modeling, database internals | LLMs, RAG, prompt engineering, Python beyond SQL | Every Text-to-SQL system needs someone who actually knows SQL. That's you. |
+| **Network Engineer** | Infrastructure, monitoring, telemetry, packet analysis, troubleshooting, protocols | Python, ML fundamentals, LLMs, cloud platforms | You understand the infrastructure AI runs on. AIOps needs network people who get AI. |
 | **Frontend Developer** | UI/UX, React/Vue, user experience, API integration | Python, ML fundamentals, LLMs, backend for AI | AI needs interfaces. ChatGPT proved that UX makes or breaks AI products. |
 | **Project/Product Manager** | Roadmaps, stakeholder management, metrics, prioritization | Python, ML fundamentals, hands-on AI building | You can lead AI teams AND understand the technology. Rare combination. |
 | **Masters Graduate (CS/DS/AI)** | ML theory, math foundations, research methodology, Python, academic projects | Production engineering, system design, deployment, real-world data messiness | You have the theory depth that self-taught engineers lack. Now prove you can ship. |
@@ -260,6 +261,7 @@ AI Engineer with [X years of PREVIOUS ROLE expertise] + [AI skills learned] + [p
 - **"AI Engineer** with 7 years of DevOps. Designed MLOps infrastructure..." (DevOps)
 - **"AI Engineer** with 4 years of business analysis. Built NL-to-SQL..." (BA/DA)
 - **"AI Engineer** with 6 years of database architecture. Optimized vector search..." (DBA)
+- **"AI Engineer** with 8 years of network engineering. Built network anomaly detection..." (Network Engineer)
 - **"AI Engineer** with MS in Computer Science and hands-on ML research. Built production RAG pipeline..." (Masters Graduate)
 
 **What hiring managers think when they see career switchers who lead with AI Engineer:**
@@ -269,6 +271,7 @@ AI Engineer with [X years of PREVIOUS ROLE expertise] + [AI skills learned] + [p
 - "This person can actually test if our AI works" — **hire** (QA)
 - "This person can talk to the business AND build the solution" — **hire** (BA/DA)
 - "This person can make AI-generated SQL actually perform" — **hire** (DBA)
+- "This person understands the infrastructure AI actually runs on" — **hire** (Network Engineer)
 - "This person has the theory AND can actually build production systems" — **hire** (Masters Graduate)
 
 > **The worst thing you can do:** hide your previous experience and try to look like a "pure" AI person. Your background is the selling point. But the SECOND worst thing is burying the AI Engineer identity — you are not a "Data Engineer exploring AI." You are an **AI Engineer with data engineering depth.**
@@ -524,6 +527,44 @@ AI Engineer with [X years of PREVIOUS ROLE expertise] + [AI skills learned] + [p
 **Build this:** A Text-to-SQL system trained on your schema expertise. Use Vanna with DDL from a database you know well — train it on your table definitions, column descriptions, and example queries. The key differentiator: add a query validation layer that checks AI-generated SQL against execution plans, flags missing indexes, and rewrites inefficient joins. No pure AI engineer can build this — it requires your DBA knowledge.
 
 **How to customize:** Use a schema from your industry (healthcare claims, financial transactions, retail inventory). Add a "query explainer" that translates SQL back to plain English for business users. Build a performance dashboard showing query costs, execution times, and optimization suggestions. Add guardrails that prevent dangerous operations (DROP, DELETE without WHERE, full table scans on large tables).
+
+---
+
+### Network Engineer → AI Engineer (AIOps & Infrastructure AI)
+
+**Your story:** "I've monitored, troubleshot, and scaled the infrastructure that everything runs on. Now I'm building AI systems that do it automatically."
+
+**Summary example:**
+> AI Engineer with [X] years of network engineering and infrastructure operations. Built a network anomaly detection system using ML on telemetry data, reducing mean time to detection by 60%. Combines deep knowledge of networking protocols, monitoring systems, and infrastructure at scale with hands-on LLM, ML, and AI evaluation experience.
+
+**What to emphasize:**
+- Telemetry and monitoring — you understand the data that AIOps systems consume (SNMP, NetFlow, syslog, metrics)
+- Troubleshooting methodology — your systematic approach to diagnosing problems maps directly to debugging AI systems
+- Infrastructure at scale — you know what it takes to keep systems running reliably, which is exactly what AI deployments need
+- Pattern recognition — you've been doing anomaly detection manually for years. ML automates what you already do intuitively
+
+**Best portfolio projects:** Network anomaly detection (time series ML), log analysis with LLMs, infrastructure chatbot (RAG over runbooks/docs), predictive capacity planning
+
+**Resume bullets to adapt:**
+- "Monitored 500-node network with 99.9% uptime" → "Built ML anomaly detection over network telemetry from 500 nodes, reducing false alerts by 40% and MTTD by 60%"
+- "Analyzed packet captures to diagnose performance issues" → "Built log analysis pipeline using LLMs to auto-diagnose network issues from syslog and NetFlow data"
+- "Created monitoring dashboards in Grafana/Nagios" → "Built AI-powered monitoring that predicts capacity bottlenecks 48 hours before they impact users"
+- "Wrote scripts to automate configuration changes" → "Built infrastructure chatbot using RAG over network runbooks, enabling L1 engineers to resolve issues 3x faster"
+
+**Bridge Projects & Repos**
+
+> You understand the infrastructure that AI runs on. Most AI engineers can build a model but can't deploy it reliably at scale. You can — and you can build AI that monitors itself.
+
+| Repo | Stars | Why It Leverages Your Skills |
+|------|-------|------------------------------|
+| [netdata/netdata](https://github.com/netdata/netdata) | 72K | Real-time infrastructure monitoring with ML anomaly detection — your monitoring expertise + ML |
+| [logpai/loglizer](https://github.com/logpai/loglizer) | 1.2K | ML-based log analysis toolkit — apply AI to the logs you already understand |
+| [alibaba/sreworks](https://github.com/alibaba/sreworks) | 1.8K | AIOps platform — see how AI is applied to infrastructure operations at scale |
+| [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph) | 26K | Build an infrastructure troubleshooting agent that follows your diagnostic methodology |
+
+**Build this:** A network anomaly detection and troubleshooting system. Collect telemetry data (use synthetic data modeled on real network metrics — latency, throughput, error rates, CPU/memory per device). Train a time series anomaly detection model (Isolation Forest or Prophet) to flag unusual patterns. Add an LLM layer that analyzes flagged anomalies against your runbook documentation (RAG) and suggests root causes. Build a dashboard showing real-time network health with AI-generated incident summaries.
+
+**How to customize:** Use telemetry patterns from your actual network experience (what does a failing switch look like in the data? a DDoS? a routing loop?). Add a chatbot interface where L1 engineers can ask "why is Site B slow?" and get AI-analyzed answers from logs and metrics. Build predictive capacity planning that forecasts when links or devices will hit thresholds. The domain knowledge you bring — knowing what "normal" looks like — is what makes the ML model useful.
 
 ---
 
