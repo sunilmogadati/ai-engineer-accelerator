@@ -1,0 +1,1605 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>AI Engineer Resume Template</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;line-height:1.6;color:#1a1a1a}
+h1,h2,h3{color:#1a237e}table{border-collapse:collapse;width:100%;margin:16px 0}th,td{border:1px solid #ddd;padding:10px;text-align:left}
+th{background:#f5f5f5}code{background:#f5f5f5;padding:2px 6px;border-radius:3px}pre{background:#1a1a2e;color:#e0e0e0;padding:16px;border-radius:8px;overflow-x:auto}
+pre code{background:none;color:inherit}blockquote{border-left:4px solid #1a237e;margin:16px 0;padding:8px 16px;background:#f8f9ff}</style></head><body>
+<h1>AI Engineer Resume Template</h1>
+<p><strong>AI Engineer Accelerator</strong>
+<strong>Author:</strong> Sunil Mogadati</p>
+<blockquote>
+<p>Your resume is a technical document. It should be optimized for two readers:
+1. <strong>ATS</strong> (Applicant Tracking System) — a keyword matcher that decides if a human ever sees your resume
+2. <strong>Hiring Manager</strong> — an engineer who spends 15 seconds on your resume before deciding yes/no</p>
+<p>This guide shows you exactly what they're looking for.</p>
+</blockquote>
+<hr />
+<h2>Table of Contents</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Section</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>What You're Targeting — Composite Job Posting</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Resume Template (Annotated)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Transition Guides — Resume Angles by Background</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Resume Tips — ATS, Quantification, Common Mistakes</td>
+</tr>
+<tr>
+<td>5</td>
+<td>GitHub as Portfolio</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Accelerator-to-Resume Mapping</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Cover Letter (When Required)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>1. What You're Targeting — Composite AI Engineer Job Posting</h2>
+<blockquote>
+<p>This is a composite posting drawn from real AI Engineer roles at Google, Microsoft, Amazon, Series A-C startups, and enterprise companies. It represents what you'll see at the entry-to-mid level.</p>
+</blockquote>
+<hr />
+<h3>AI Engineer</h3>
+<p><strong>Company:</strong> [Tech Company / AI Startup / Enterprise]
+<strong>Location:</strong> Remote / Hybrid — US
+<strong>Level:</strong> Entry to Mid (0-3 years AI experience)</p>
+<h4>About the Role</h4>
+<p>We're looking for an AI Engineer to design, build, and deploy AI-powered products. You'll work with LLMs, build RAG pipelines, fine-tune models, and ship production systems that serve real users. This is a hands-on engineering role — you'll write code, own services, and collaborate with product, data science, and platform teams.</p>
+<h4>Responsibilities</h4>
+<ul>
+<li>Design and implement LLM-powered features (chatbots, search, content generation, agents)</li>
+<li>Build and optimize RAG pipelines — document ingestion, chunking, embedding, retrieval, and generation</li>
+<li>Fine-tune open-source models (LoRA/QLoRA) for domain-specific tasks</li>
+<li>Develop and maintain prompt engineering frameworks and evaluation systems</li>
+<li>Deploy models to production with monitoring, logging, and observability</li>
+<li>Collaborate with ML engineers on model selection, evaluation, and A/B testing</li>
+<li>Write clean, tested, documented Python code</li>
+<li>Participate in code reviews, design reviews, and on-call rotations</li>
+</ul>
+<h4>Required Skills</h4>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Languages</strong></td>
+<td>Python (strong), SQL</td>
+</tr>
+<tr>
+<td><strong>ML/DL</strong></td>
+<td>Scikit-learn, PyTorch or TensorFlow, training loops, evaluation metrics</td>
+</tr>
+<tr>
+<td><strong>LLM &amp; GenAI</strong></td>
+<td>Prompt engineering, RAG, LangChain or LlamaIndex, OpenAI/Anthropic APIs, embeddings, vector databases</td>
+</tr>
+<tr>
+<td><strong>Cloud &amp; Infra</strong></td>
+<td>AWS or GCP or Azure (at least one), Docker, CI/CD basics</td>
+</tr>
+<tr>
+<td><strong>Data</strong></td>
+<td>Pandas, NumPy, data pipelines, SQL databases</td>
+</tr>
+<tr>
+<td><strong>Fundamentals</strong></td>
+<td>Git, Linux command line, REST APIs, testing</td>
+</tr>
+</tbody>
+</table>
+<h4>Preferred Skills</h4>
+<ul>
+<li>Fine-tuning experience (LoRA, QLoRA, PEFT)</li>
+<li>Multi-agent systems (LangGraph, CrewAI, Autogen)</li>
+<li>MLOps (MLflow, Weights &amp; Biases, model registries)</li>
+<li>Voice AI (Twilio, RetellAI, Deepgram)</li>
+<li>Evaluation frameworks (RAGAS, custom metrics)</li>
+<li>Contributions to open-source projects</li>
+<li>Technical writing or blog posts</li>
+</ul>
+<h4>What Sets Candidates Apart</h4>
+<ul>
+<li><strong>Deployed projects</strong> — not just notebooks, but systems running in production</li>
+<li><strong>Quantified impact</strong> — "reduced latency by 40%" beats "improved performance"</li>
+<li><strong>End-to-end ownership</strong> — designed, built, deployed, AND monitored</li>
+<li><strong>Understanding of ML fundamentals</strong> — can explain why, not just how</li>
+<li><strong>Both traditional ML AND GenAI</strong> — companies need engineers who can build NER pipelines with Scikit-learn AND RAG systems with LangChain. GenAI alone won't get you hired.</li>
+<li><strong>Cost awareness</strong> — "Reduced API costs by 35% through caching and model routing" shows production maturity</li>
+<li><strong>Evaluation mindset</strong> — candidates who talk about faithfulness scores, hallucination rates, and P95 latency stand out from those who just "built a chatbot"</li>
+<li><strong>Communication</strong> — if you can't explain your RAG pipeline to a non-technical stakeholder in 60 seconds, you're not ready. Technical depth + business translation = hire.</li>
+</ul>
+<hr />
+<h2>2. Resume Template (Annotated)</h2>
+<blockquote>
+<p><strong>Format rules:</strong>
+- One page (two pages ONLY if you have 5+ years of relevant experience)
+- No graphics, icons, photos, or multi-column layouts (ATS can't parse them)
+- Standard fonts: Arial, Calibri, or Times New Roman
+- PDF format (preserves layout across systems)
+- File name: <code>FirstName_LastName_AI_Engineer_Resume.pdf</code></p>
+</blockquote>
+<hr />
+<h3>[YOUR NAME]</h3>
+<p>[City, State] | [email] | [phone] | [LinkedIn URL] | [GitHub URL] | [Portfolio URL (optional)]</p>
+<hr />
+<h4>SUMMARY</h4>
+<blockquote>
+<p><strong>2-3 lines. Domain-focused. Not generic.</strong>
+Bad: "Passionate software engineer seeking a challenging role in AI."
+Good: See examples below.</p>
+</blockquote>
+<p><strong>Entry-level example:</strong></p>
+<p>AI Engineer with hands-on experience building RAG pipelines, fine-tuning LLMs, and deploying ML models to production. Built a multi-tenant document Q&amp;A system serving 10K queries/day using LangChain, FAISS, and GPT-4. Strong Python and PyTorch foundation with a focus on production-grade AI systems.</p>
+<p><strong>Experienced engineer example:</strong></p>
+<p>AI Engineer with 5 years of production backend engineering (Java/Python) now building AI-powered systems end-to-end. Designed and deployed an enterprise RAG pipeline that reduced customer support response time by 60%. Brings production engineering discipline — API design, testing, CI/CD, monitoring — to every ML and LLM system shipped.</p>
+<hr />
+<h4>TECHNICAL SKILLS</h4>
+<blockquote>
+<p><strong>Categorize. Match keywords to the job posting. ATS scans this section first.</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Languages</strong></td>
+<td>Python, SQL, JavaScript</td>
+</tr>
+<tr>
+<td><strong>ML / Deep Learning</strong></td>
+<td>PyTorch, Scikit-learn, Pandas, NumPy, Matplotlib, Hugging Face Transformers</td>
+</tr>
+<tr>
+<td><strong>LLM &amp; GenAI</strong></td>
+<td>LangChain, LlamaIndex, OpenAI API, Anthropic API, RAG, Prompt Engineering, FAISS, ChromaDB, Pinecone</td>
+</tr>
+<tr>
+<td><strong>Cloud &amp; MLOps</strong></td>
+<td>AWS (SageMaker, Lambda, S3, Bedrock), Docker, GitHub Actions, MLflow, Weights &amp; Biases</td>
+</tr>
+<tr>
+<td><strong>Data</strong></td>
+<td>PostgreSQL, MongoDB, Redis, Airflow, Spark (basic)</td>
+</tr>
+<tr>
+<td><strong>Tools</strong></td>
+<td>Git, Linux, VS Code, Jupyter, Postman</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Customization rule:</strong> Mirror the exact terms from the job posting. If they say "Amazon Bedrock," don't write "AWS AI services." If they say "LangChain," include "LangChain" — not just "LLM frameworks."</p>
+</blockquote>
+<hr />
+<h4>EXPERIENCE</h4>
+<blockquote>
+<p><strong>Format: Action verb + what you built + quantified impact</strong>
+<strong>Use reverse chronological order (most recent first)</strong></p>
+</blockquote>
+<p><strong>AI Engineer</strong> | [Company Name] | [City, State] | [Start – End]</p>
+<ul>
+<li>Built a RAG pipeline processing 50K documents with LangChain, FAISS, and GPT-4, achieving 92% retrieval accuracy and serving 10K queries/day</li>
+<li>Reduced LLM inference latency by 40% through prompt optimization, response caching, and batch processing</li>
+<li>Implemented evaluation framework using RAGAS metrics (faithfulness, relevance, context precision), improving answer quality by 25%</li>
+<li>Fine-tuned Llama-2-7B using LoRA on domain-specific data (15K examples), reducing hallucination rate from 18% to 4%</li>
+<li>Deployed models to AWS SageMaker with auto-scaling, monitoring via CloudWatch, and CI/CD through GitHub Actions</li>
+</ul>
+<p><strong>Software Engineer</strong> | [Company Name] | [City, State] | [Start – End]</p>
+<ul>
+<li>Developed REST APIs serving 100K+ requests/day using Python (FastAPI) with PostgreSQL and Redis caching</li>
+<li>Automated data pipeline processing 2M records/day, reducing manual reporting time from 4 hours to 15 minutes</li>
+<li>Led migration from monolithic architecture to microservices, improving deployment frequency from monthly to daily</li>
+</ul>
+<blockquote>
+<p><strong>Action verb bank (use these):</strong>
+Built, Designed, Implemented, Deployed, Optimized, Reduced, Automated, Led, Architected, Migrated, Integrated, Developed, Scaled, Improved</p>
+<p><strong>Quantification patterns:</strong>
+- Latency: "Reduced inference latency from 2s to 800ms (60% improvement)"
+- Accuracy: "Improved retrieval accuracy from 78% to 92%"
+- Scale: "Serving 10K queries/day across 500 concurrent users"
+- Cost: "Reduced API costs by 35% through prompt optimization and caching"
+- Time: "Automated process that saved 20 hours/week of manual work"
+- Adoption: "Deployed to 3 internal teams, adopted by 200+ users in first month"</p>
+</blockquote>
+<hr />
+<h4>PROJECTS</h4>
+<blockquote>
+<p><strong>2-3 projects. Each with GitHub link and deployed demo (if possible).</strong>
+<strong>These are your proof. Pick projects that demonstrate different skills.</strong></p>
+</blockquote>
+<p><strong>Enterprise Document Q&amp;A System</strong> | <a href="link">GitHub</a> | <a href="link">Live Demo</a>
+- Multi-tenant RAG pipeline with role-based access, hybrid search (semantic + keyword), and streaming responses
+- Stack: Python, LangChain, FAISS, PostgreSQL, FastAPI, Docker, AWS
+- Evaluation: RAGAS metrics, 92% faithfulness score, sub-2s response time</p>
+<p><strong>Customer Support AI Agent</strong> | <a href="link">GitHub</a>
+- Multi-agent system with tool calling (CRM lookup, order status, escalation) using LangGraph
+- Handles 15 intent categories with 94% classification accuracy
+- Includes safety guardrails, conversation memory, and human escalation triggers</p>
+<p><strong>ML Model Training Pipeline</strong> | <a href="link">GitHub</a>
+- End-to-end PyTorch training pipeline: data loading, augmentation, training, evaluation, model registry
+- Experiment tracking with MLflow, hyperparameter tuning, model versioning
+- Deployed as REST API with FastAPI, Docker, and GitHub Actions CI/CD</p>
+<blockquote>
+<p><strong>Project selection strategy:</strong>
+- Project 1: RAG / LLM application (shows GenAI skills)
+- Project 2: Agent / multi-step AI system (shows architecture skills)
+- Project 3: ML training pipeline (shows ML fundamentals)
+- At least one should be deployed (not just a notebook)</p>
+</blockquote>
+<hr />
+<h4>EDUCATION</h4>
+<p><strong>Bachelor of Science in Computer Science</strong> | [University Name] | [Graduation Year]
+- Relevant coursework: Machine Learning, Data Structures, Algorithms, Linear Algebra, Probability &amp; Statistics</p>
+<blockquote>
+<p><strong>If you have a Master's or PhD in ML/CS, list it. If your degree is in another field, list it but emphasize relevant coursework or self-study.</strong></p>
+</blockquote>
+<hr />
+<h4>CERTIFICATIONS (Optional)</h4>
+<ul>
+<li>AWS Certified Machine Learning — Specialty</li>
+<li>DeepLearning.AI — LangChain for LLM Application Development</li>
+<li>AI Engineer Accelerator — Completion Certificate</li>
+</ul>
+<blockquote>
+<p><strong>Only list certifications that are relevant and recognized. Quality over quantity.</strong></p>
+</blockquote>
+<hr />
+<h2>3. Transition Guides — Resume Angles by Background</h2>
+<blockquote>
+<p><strong>Your previous career is not a liability — it's your unfair advantage.</strong> Every background brings transferable skills that pure AI graduates don't have. The key is positioning: show how your existing expertise PLUS AI skills makes you more valuable than someone who only knows AI.</p>
+</blockquote>
+<h3>Quick Reference: What You Already Have</h3>
+<table>
+<thead>
+<tr>
+<th>Your Background</th>
+<th>Skills That Transfer Directly</th>
+<th>Your Gap (What to Learn)</th>
+<th>Your Unfair Advantage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Software Developer</strong></td>
+<td>Production code, APIs, testing, CI/CD, system design, debugging</td>
+<td>ML fundamentals, embeddings, prompt engineering, model evaluation</td>
+<td>You know how to ship. Most ML grads don't.</td>
+</tr>
+<tr>
+<td><strong>Data Engineer</strong></td>
+<td>Pipelines, SQL, data modeling, Spark, cloud infra, data quality</td>
+<td>LLMs, RAG, prompt engineering, model serving</td>
+<td>AI is 70% data work. You already own the hardest part.</td>
+</tr>
+<tr>
+<td><strong>DevOps / SRE</strong></td>
+<td>Docker, K8s, CI/CD, monitoring, scaling, infrastructure-as-code</td>
+<td>ML concepts, LLM APIs, embeddings, evaluation</td>
+<td>MLOps is the bottleneck. You're the solution.</td>
+</tr>
+<tr>
+<td><strong>QA / SDET</strong></td>
+<td>Testing frameworks, automation, edge cases, quality metrics</td>
+<td>ML concepts, LLM APIs, prompt engineering</td>
+<td>AI evaluation is THE unsolved problem. Your testing mindset is gold.</td>
+</tr>
+<tr>
+<td><strong>Business Analyst</strong></td>
+<td>Requirements, stakeholder communication, domain knowledge, data analysis</td>
+<td>Python, ML basics, LLM APIs, system design</td>
+<td>You translate business to tech. AI teams desperately need this.</td>
+</tr>
+<tr>
+<td><strong>Data Analyst</strong></td>
+<td>SQL, Python/R, visualization, statistics, business context</td>
+<td>Deep learning, LLMs, embeddings, system design</td>
+<td>You understand the data and the business. AI engineers often don't.</td>
+</tr>
+<tr>
+<td><strong>DBA / SQL Specialist</strong></td>
+<td>Schema design, query optimization, indexing, data modeling, database internals</td>
+<td>LLMs, RAG, prompt engineering, Python beyond SQL</td>
+<td>Every Text-to-SQL system needs someone who actually knows SQL. That's you.</td>
+</tr>
+<tr>
+<td><strong>Frontend Developer</strong></td>
+<td>UI/UX, React/Vue, user experience, API integration</td>
+<td>Python, ML fundamentals, LLMs, backend for AI</td>
+<td>AI needs interfaces. ChatGPT proved that UX makes or breaks AI products.</td>
+</tr>
+<tr>
+<td><strong>Project/Product Manager</strong></td>
+<td>Roadmaps, stakeholder management, metrics, prioritization</td>
+<td>Python, ML fundamentals, hands-on AI building</td>
+<td>You can lead AI teams AND understand the technology. Rare combination.</td>
+</tr>
+<tr>
+<td><strong>Masters Graduate (CS/DS/AI)</strong></td>
+<td>ML theory, math foundations, research methodology, Python, academic projects</td>
+<td>Production engineering, system design, deployment, real-world data messiness</td>
+<td>You have the theory depth that self-taught engineers lack. Now prove you can ship.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>The Universal Formula</h3>
+<p>Regardless of background, your resume transition follows this pattern:</p>
+<pre><code>AI Engineer with [X years of PREVIOUS ROLE expertise] + [AI skills learned] + [project that combines both]
+</code></pre>
+<p><strong>You are an AI Engineer.</strong> Not "aspiring," not "transitioning" — your title, your headline, your LinkedIn, your resume all say <strong>AI Engineer.</strong> The formula fills in WHY you're credible:</p>
+<table>
+<thead>
+<tr>
+<th>Resume Element</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>"AI Engineer"</strong></td>
+<td>Your title. This is who you are now. Lead with it.</td>
+</tr>
+<tr>
+<td><strong>X years of [previous role]</strong></td>
+<td>Your proof. This is what makes you MORE credible than a bootcamp grad.</td>
+</tr>
+<tr>
+<td><strong>AI skills learned</strong></td>
+<td>Your capability. RAG, LLMs, embeddings, fine-tuning — you can build.</td>
+</tr>
+<tr>
+<td><strong>Project that combines both</strong></td>
+<td>Your evidence. You didn't just learn AI — you shipped something that uses your domain expertise AND AI together.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>What this sounds like on a resume:</strong>
+- <strong>"AI Engineer</strong> with 8 years of data engineering. Built real-time ML pipelines..." (Data Engineer)
+- <strong>"AI Engineer</strong> with 6 years of production backend systems. Deployed RAG pipeline..." (Software Dev)
+- <strong>"AI Engineer</strong> with 5 years of QA automation. Built AI evaluation frameworks..." (QA)
+- <strong>"AI Engineer</strong> with 7 years of DevOps. Designed MLOps infrastructure..." (DevOps)
+- <strong>"AI Engineer</strong> with 4 years of business analysis. Built NL-to-SQL..." (BA/DA)
+- <strong>"AI Engineer</strong> with 6 years of database architecture. Optimized vector search..." (DBA)
+- <strong>"AI Engineer</strong> with MS in Computer Science and hands-on ML research. Built production RAG pipeline..." (Masters Graduate)</p>
+<p><strong>What hiring managers think when they see career switchers who lead with AI Engineer:</strong>
+- "This person knows production systems AND AI" — <strong>hire</strong> (Software Dev)
+- "This person can build the data pipeline AND the AI layer" — <strong>hire</strong> (Data Engineer)
+- "This person can deploy and monitor AI in production" — <strong>hire</strong> (DevOps)
+- "This person can actually test if our AI works" — <strong>hire</strong> (QA)
+- "This person can talk to the business AND build the solution" — <strong>hire</strong> (BA/DA)
+- "This person can make AI-generated SQL actually perform" — <strong>hire</strong> (DBA)
+- "This person has the theory AND can actually build production systems" — <strong>hire</strong> (Masters Graduate)</p>
+<blockquote>
+<p><strong>The worst thing you can do:</strong> hide your previous experience and try to look like a "pure" AI person. Your background is the selling point. But the SECOND worst thing is burying the AI Engineer identity — you are not a "Data Engineer exploring AI." You are an <strong>AI Engineer with data engineering depth.</strong></p>
+</blockquote>
+<hr />
+<h3>Software Developer → AI Engineer</h3>
+<p><strong>Your story:</strong> "I've shipped production systems for X years. Now I build AI-powered ones."</p>
+<p><strong>Summary example:</strong></p>
+<blockquote>
+<p>AI Engineer with [X] years of production software engineering. Built and deployed a RAG pipeline processing 50K documents using LangChain and FAISS, leveraging existing expertise in API design, testing, and CI/CD. Combines software engineering discipline with hands-on LLM, fine-tuning, and ML evaluation experience.</p>
+</blockquote>
+<p><strong>What to emphasize:</strong>
+- Production code quality (testing, error handling, logging) — AI codebases are notoriously messy
+- API design — you know how to build the serving layer for AI models
+- System design — you can architect AI systems, not just call APIs in notebooks
+- Debugging skills — debugging AI pipelines requires engineering discipline</p>
+<p><strong>Best portfolio projects:</strong> RAG Chatbot (shows AI + production skills), Code Review Assistant (AI + dev tools)</p>
+<p><strong>Resume bullets to adapt from your past work:</strong>
+- "Migrated monolith to microservices" → frame as: experience decomposing complex systems (relevant to AI system architecture)
+- "Built REST APIs serving 100K req/day" → directly relevant: AI models need serving infrastructure
+- "Implemented CI/CD pipeline" → frame as: ready for MLOps (model deployment, monitoring, rollback)</p>
+<p><strong>Bridge Projects &amp; Repos</strong></p>
+<blockquote>
+<p>These repos let you add AI to the ecosystems you already work in — not start over from scratch.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Stars</th>
+<th>Why It Leverages Your Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/spring-projects/spring-ai">spring-projects/spring-ai</a></td>
+<td>8K</td>
+<td>AI in Spring Boot — add LLM capabilities to the same framework you've shipped production code in</td>
+</tr>
+<tr>
+<td><a href="https://github.com/BerriAI/litellm">BerriAI/litellm</a></td>
+<td>18K</td>
+<td>API gateway for LLMs — the backend infrastructure pattern you already know, applied to model routing</td>
+</tr>
+<tr>
+<td><a href="https://github.com/langfuse/langfuse">langfuse/langfuse</a></td>
+<td>20K</td>
+<td>LLM observability platform — like Datadog for AI. Tracing, monitoring, evaluation for LLM apps</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Build this:</strong> Add an AI-powered search endpoint to a REST API. Fork LiteLLM or use Spring AI to add a semantic search endpoint to an existing backend service. Ingest documents, generate embeddings, store in a vector database, and serve through a clean API with authentication, rate limiting, and error handling. Your production engineering instincts (input validation, logging, graceful degradation) make this instantly better than what most AI tutorials produce.</p>
+<p><strong>How to customize:</strong> Use your existing tech stack — if you're a Java developer, Spring AI is your entry point. If you're Python/Node, use LiteLLM as an API gateway. Add Langfuse for observability so you can trace every LLM call. Include cost tracking, latency monitoring, and A/B testing between models. The production hardening you add naturally is what separates you from tutorial builders.</p>
+<hr />
+<h3>Data Engineer → AI Engineer</h3>
+<p><strong>Your story:</strong> "AI is 70% data work. I already own the hardest part."</p>
+<p><strong>Summary example:</strong></p>
+<blockquote>
+<p>AI Engineer transitioning from [X] years of data engineering. Built a production RAG pipeline with custom data ingestion, chunking, and vector storage — applying pipeline design expertise to AI-native architectures. Strong SQL, Spark, and cloud infrastructure foundation with added LLM, embedding, and evaluation skills.</p>
+</blockquote>
+<p><strong>What to emphasize:</strong>
+- Data pipelines — RAG systems ARE data pipelines (ingest → transform → store → retrieve)
+- Data quality — garbage in, garbage out applies 10x to AI. You know how to prevent it.
+- SQL and data modeling — vector databases still need structured metadata
+- Cloud infrastructure — you can deploy and scale AI systems, not just build them locally</p>
+<p><strong>Best portfolio projects:</strong> NL-to-SQL (bridges data + AI), RAG Chatbot (shows pipeline expertise)</p>
+<p><strong>Resume bullets to adapt:</strong>
+- "Built ETL pipeline processing 2M records/day" → "Built AI data ingestion pipeline processing 50K documents with automated chunking, deduplication, and embedding generation"
+- "Managed data warehouse with 500 tables" → frame as: experience with complex data at scale (relevant to enterprise RAG)
+- "Implemented data quality checks" → "Implemented RAG evaluation pipeline with retrieval accuracy, faithfulness, and relevance metrics"</p>
+<p><strong>Bridge Projects &amp; Repos</strong></p>
+<blockquote>
+<p>AI pipelines ARE data pipelines. These repos extend the tools you already know into AI-native workflows.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Stars</th>
+<th>Why It Leverages Your Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/astronomer/airflow-ai-sdk">astronomer/airflow-ai-sdk</a></td>
+<td>New</td>
+<td>AI tasks inside Airflow DAGs — add LLM calls and embeddings to your existing orchestration patterns</td>
+</tr>
+<tr>
+<td><a href="https://github.com/feast-dev/feast">feast-dev/feast</a></td>
+<td>6.7K</td>
+<td>Feature store for ML — a specialized data pipeline you're built to design and operate</td>
+</tr>
+<tr>
+<td><a href="https://github.com/dbt-labs/dbt-core">dbt-labs/dbt-core</a></td>
+<td>10.8K</td>
+<td>SQL transforms + new AI integrations — your dbt skills now power AI feature engineering</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Build this:</strong> An AI-enhanced data pipeline. Build an Airflow DAG that ingests documents, chunks them, generates embeddings, and loads them into a vector database — the same ingest → transform → load pattern you already know, but for AI. Add data quality checks at each stage (document deduplication, chunk size validation, embedding dimension verification). Use Feast to serve features for an ML model alongside the vector pipeline. This proves AI is just data engineering with a new destination.</p>
+<p><strong>How to customize:</strong> Use data from your industry (financial reports, support tickets, product catalogs). Add incremental processing (only re-embed changed documents). Build a metadata layer tracking document lineage, freshness, and quality scores. Add monitoring for embedding drift and retrieval performance degradation.</p>
+<hr />
+<h3>DevOps / SRE → AI Engineer (MLOps Focus)</h3>
+<p><strong>Your story:</strong> "I make AI systems actually work in production."</p>
+<p><strong>Summary example:</strong></p>
+<blockquote>
+<p>AI/MLOps Engineer with [X] years of DevOps and SRE experience. Deployed ML models to production with auto-scaling, monitoring, and CI/CD — applying infrastructure expertise to AI workloads. Built and operated RAG pipelines with Docker, Kubernetes, and cloud-native tooling. Combines operational discipline with hands-on LLM and ML experience.</p>
+</blockquote>
+<p><strong>What to emphasize:</strong>
+- Model deployment — Docker, K8s, serving infrastructure (most AI engineers struggle here)
+- Monitoring and observability — model drift, latency tracking, cost monitoring
+- CI/CD for ML — model versioning, automated testing, rollback strategies
+- Scaling — you know how to handle 10K requests/day, not just notebook demos</p>
+<p><strong>Best portfolio projects:</strong> ML Training Pipeline (shows MLOps), RAG Chatbot with full deployment (Docker, monitoring, CI/CD)</p>
+<p><strong>Resume bullets to adapt:</strong>
+- "Managed Kubernetes cluster with 200 pods" → "Deployed ML model serving infrastructure on Kubernetes with auto-scaling and health checks"
+- "Built CI/CD pipeline with 15-minute deploy cycles" → "Built ML CI/CD pipeline: automated model testing, versioning, and deployment with rollback"
+- "Reduced incident response time by 60%" → "Built model monitoring dashboard tracking inference latency, error rates, and drift detection"</p>
+<p><strong>Bridge Projects &amp; Repos</strong></p>
+<blockquote>
+<p>MLOps is DevOps for models. These repos are your existing toolkit applied to ML — containerization, CI/CD, monitoring, scaling.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Stars</th>
+<th>Why It Leverages Your Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/mlflow/mlflow">mlflow/mlflow</a></td>
+<td>20K</td>
+<td>CI/CD for models — experiment tracking, model registry, deployment. Your pipeline skills, applied to ML</td>
+</tr>
+<tr>
+<td><a href="https://github.com/bentoml/BentoML">bentoml/BentoML</a></td>
+<td>8.5K</td>
+<td>Docker for ML models — containerized serving with the same patterns you already use</td>
+</tr>
+<tr>
+<td><a href="https://github.com/kserve/kserve">kserve/kserve</a></td>
+<td>5.9K</td>
+<td>K8s-native model serving — CRDs, autoscaling, canary rollouts. Your K8s expertise, directly applicable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Build this:</strong> Deploy and monitor an ML model end-to-end. Use MLflow to track experiments and register model versions. Package with BentoML (or KServe if you're K8s-experienced) for serving. Build a monitoring dashboard tracking inference latency, error rates, model drift, and cost per prediction. Add automated rollback when quality metrics drop below thresholds. This is the project that proves MLOps is DevOps — and you already know DevOps.</p>
+<p><strong>How to customize:</strong> Add canary deployments (route 10% of traffic to new model, compare metrics, promote or rollback). Build alerting with PagerDuty/Slack integration for model failures. Add cost tracking per model version. Create a runbook for ML incident response — your SRE background makes this second nature.</p>
+<hr />
+<h3>QA / SDET → AI Engineer (Evaluation Focus)</h3>
+<p><strong>Your story:</strong> "AI evaluation is the unsolved problem. I'm a testing expert."</p>
+<p><strong>Summary example:</strong></p>
+<blockquote>
+<p>AI Engineer with [X] years of quality engineering experience. Built AI evaluation frameworks measuring retrieval accuracy, faithfulness, and hallucination rates — applying testing methodology to the hardest problem in AI. Hands-on experience with RAG pipelines, LLM APIs, and automated evaluation using RAGAS and custom metrics.</p>
+</blockquote>
+<p><strong>What to emphasize:</strong>
+- AI evaluation — this is THE hiring differentiator right now. Companies ship AI without knowing if it works.
+- Test automation — automated evaluation pipelines for AI outputs
+- Edge case thinking — adversarial testing, prompt injection detection, safety guardrails
+- Metrics — precision, recall, F1 translate directly to AI model evaluation</p>
+<p><strong>Best portfolio projects:</strong> RAG Chatbot with comprehensive evaluation suite, any project with before/after quality metrics</p>
+<p><strong>Resume bullets to adapt:</strong>
+- "Built test automation framework covering 2K test cases" → "Built AI evaluation framework testing 500 query-response pairs across faithfulness, relevance, and hallucination metrics"
+- "Reduced production bugs by 40%" → "Reduced AI hallucination rate from 18% to 4% through systematic prompt testing and evaluation"
+- "Implemented CI regression testing" → "Built automated AI regression testing: every model update runs 200 evaluation queries before deployment"</p>
+<p><strong>Bridge Projects &amp; Repos</strong></p>
+<blockquote>
+<p>AI evaluation is the #1 unsolved problem in the industry. These repos turn your testing expertise into the most in-demand AI skill.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Stars</th>
+<th>Why It Leverages Your Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/confident-ai/deepeval">confident-ai/deepeval</a></td>
+<td>12.8K</td>
+<td>pytest for LLMs — write test suites for AI the same way you write test suites for code</td>
+</tr>
+<tr>
+<td><a href="https://github.com/explodinggradients/ragas">explodinggradients/ragas</a></td>
+<td>12.9K</td>
+<td>RAG evaluation framework — precision/recall for retrieval, the metrics you already think in</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Giskard-AI/giskard">Giskard-AI/giskard</a></td>
+<td>2.5K</td>
+<td>AI red-teaming and security testing — adversarial testing for models, like pen testing for AI</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Build this:</strong> An AI evaluation pipeline that runs in CI/CD. Set up DeepEval + RAGAS to test a RAG system across faithfulness, relevance, and hallucination metrics. Wire it into GitHub Actions so every prompt template change or model swap triggers a full evaluation suite. Add adversarial test cases (prompt injection, edge cases, ambiguous queries) using Giskard. This is the project that makes hiring managers say "finally, someone who tests AI properly."</p>
+<p><strong>How to customize:</strong> Create domain-specific test suites (medical accuracy, financial compliance, legal precision). Add regression testing that catches quality drops when models are updated. Build a test report dashboard showing pass/fail rates, metric trends, and failure analysis. Include a "red team" section with adversarial prompts you've designed.</p>
+<hr />
+<h3>Business Analyst → AI Engineer</h3>
+<p><strong>Your story:</strong> "I understand the business problem AND can build the AI solution."</p>
+<p><strong>Summary example:</strong></p>
+<blockquote>
+<p>AI Engineer with [X] years of business analysis experience. Built AI solutions that translate directly to business outcomes — from a RAG pipeline reducing support response time by 60% to an NL-to-SQL interface that lets non-technical teams query data in plain English. Combines domain expertise and stakeholder communication with hands-on Python, LLM, and ML skills.</p>
+</blockquote>
+<p><strong>What to emphasize:</strong>
+- Business translation — you can explain AI to stakeholders (most engineers can't)
+- Requirements → system design — you know how to turn business needs into technical specs
+- Domain knowledge — you understand the industry problems AI should solve
+- Data analysis — you know what questions the business needs answered</p>
+<p><strong>Best portfolio projects:</strong> NL-to-SQL (business users querying data), Customer Support Copilot (business process automation)</p>
+<p><strong>Resume bullets to adapt:</strong>
+- "Gathered requirements for 15 product features" → "Designed AI solution requirements: user stories, acceptance criteria, and evaluation metrics for RAG-powered customer support system"
+- "Created dashboards for executive reporting" → "Built NL-to-SQL interface allowing executives to query data in plain English, replacing 20 hours/month of manual report generation"
+- "Reduced process time by 30% through automation" → frame as: experience identifying automation opportunities (exactly what AI does)</p>
+<p><strong>Bridge Projects &amp; Repos</strong></p>
+<blockquote>
+<p>You don't need to write complex code to build AI applications. These tools let you leverage your process design and stakeholder skills directly.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Stars</th>
+<th>Why It Leverages Your Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/FlowiseAI/Flowise">FlowiseAI/Flowise</a></td>
+<td>47K</td>
+<td>Visual drag-and-drop AI app builder — design AI workflows like you design business processes</td>
+</tr>
+<tr>
+<td><a href="https://github.com/n8n-io/n8n">n8n-io/n8n</a></td>
+<td>179K</td>
+<td>Workflow automation with AI nodes — connect AI to business tools you already know</td>
+</tr>
+<tr>
+<td><a href="https://github.com/streamlit/streamlit">streamlit/streamlit</a></td>
+<td>40K</td>
+<td>Build AI dashboards in Python — turn your requirements docs into working prototypes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Build this:</strong> A no-code AI chatbot for a business process you've analyzed. Use Flowise or n8n to build a workflow that automates a real business process — customer intake, FAQ answering, or report generation. Add a Streamlit dashboard showing usage metrics, user satisfaction, and cost savings. Your ability to map business requirements to AI capabilities is the entire value proposition.</p>
+<p><strong>How to customize:</strong> Pick a process from your domain (HR onboarding, customer support triage, compliance checks). Build the AI workflow, then create a business case dashboard: time saved, cost reduced, accuracy improved. Write the README as a business proposal, not just a tech doc. This is your proof that you bridge business and technology.</p>
+<hr />
+<h3>Data Analyst → AI Engineer</h3>
+<p><strong>Your story:</strong> "I already understand the data and the business. Now I build AI on top of it."</p>
+<p><strong>Summary example:</strong></p>
+<blockquote>
+<p>AI Engineer with [X] years of data analysis experience. Built AI systems grounded in statistical rigor — from ML classification models with proper evaluation to RAG pipelines with retrieval accuracy tracking. Combines strong SQL, Python, and statistics foundation with LLM, embedding, and production AI skills.</p>
+</blockquote>
+<p><strong>What to emphasize:</strong>
+- Statistical thinking — understanding distributions, significance, A/B testing applies to model evaluation
+- SQL mastery — essential for data preparation and feature engineering
+- Visualization and communication — explain model results to stakeholders
+- Domain data expertise — you know the data, the edge cases, the business meaning</p>
+<p><strong>Best portfolio projects:</strong> ML Training Pipeline (shows statistical rigor), Resume/Job Matcher (NLP + data analysis)</p>
+<p><strong>Resume bullets to adapt:</strong>
+- "Analyzed customer churn across 500K records" → "Built ML churn prediction model on 500K customer records achieving 91% F1 score using Scikit-learn"
+- "Created SQL queries for executive reporting" → "Built NL-to-SQL interface generating analytical queries across 12 tables with 89% execution accuracy"
+- "Built dashboards tracking KPIs" → "Built model monitoring dashboard tracking inference latency, accuracy drift, and cost per prediction"</p>
+<p><strong>Bridge Projects &amp; Repos</strong></p>
+<blockquote>
+<p>Fork a repo that leverages your analytical skills. Your data intuition + AI = tools that actually understand business context.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Stars</th>
+<th>Why It Leverages Your Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/sinaptik-ai/pandas-ai">sinaptik-ai/pandas-ai</a></td>
+<td>23K</td>
+<td>Chat with your data using natural language — your analytical workflows, supercharged</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Canner/WrenAI">Canner/WrenAI</a></td>
+<td>14K</td>
+<td>Generative BI — NL to SQL to charts. Your dashboarding expertise meets AI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/evidentlyai/evidently">evidentlyai/evidently</a></td>
+<td>6.8K</td>
+<td>ML/data drift monitoring — like the KPI tracking you already do, but for models</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Build this:</strong> An AI-powered analytics tool. Connect PandasAI or WrenAI to a real dataset you've worked with (sales, marketing, customer data). Let users ask questions in plain English and get charts + insights back. Add statistical validation to AI-generated answers — your stats background catches hallucinated numbers that pure AI engineers miss.</p>
+<p><strong>How to customize:</strong> Use a dataset from your industry. Add summary explanations alongside charts ("this metric is trending 2σ above historical average"). Build an evaluation layer that checks if AI-generated aggregations match actual SQL results. Add anomaly detection alerts that flag when data patterns shift.</p>
+<hr />
+<h3>DBA / SQL Specialist → AI Engineer</h3>
+<p><strong>Your story:</strong> "I know every schema, query pattern, and performance bottleneck. Now I make databases talk back in plain English."</p>
+<p><strong>Summary example:</strong></p>
+<blockquote>
+<p>AI Engineer with [X] years of database administration and SQL expertise. Built a Text-to-SQL system trained on production schemas and query history using RAG, reducing ad-hoc reporting requests by 70%. Combines deep knowledge of data modeling, query optimization, and database internals with hands-on LLM, embedding, and AI evaluation experience.</p>
+</blockquote>
+<p><strong>What to emphasize:</strong>
+- Schema expertise — you understand normalization, indexing, and data relationships that Text-to-SQL systems need
+- Query optimization — you can evaluate and improve AI-generated SQL for performance, not just correctness
+- Data modeling — you know how to structure data so AI systems can reason about it effectively
+- Database internals — understanding execution plans, indexing, and constraints makes you invaluable for AI-database integration</p>
+<p><strong>Best portfolio projects:</strong> NL-to-SQL (your domain expertise makes this exceptional), RAG Chatbot over database documentation</p>
+<p><strong>Resume bullets to adapt:</strong>
+- "Managed 500-table production database serving 10K queries/day" → "Built Text-to-SQL system over 500-table schema, generating optimized queries from natural language with 91% execution accuracy"
+- "Optimized slow queries reducing response time by 80%" → "Built AI query optimizer that analyzes generated SQL against execution plans and rewrites for performance"
+- "Created stored procedures for complex reporting" → "Replaced 50 stored procedures with NL-to-SQL interface, enabling non-technical users to self-serve analytics in plain English"</p>
+<p><strong>Bridge Projects &amp; Repos</strong></p>
+<blockquote>
+<p>Your schema knowledge is the missing piece in every Text-to-SQL system. Most AI engineers generate SQL that runs but performs terribly. You know why.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Stars</th>
+<th>Why It Leverages Your Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/vanna-ai/vanna">vanna-ai/vanna</a></td>
+<td>20K+</td>
+<td>RAG-based Text-to-SQL — trains on DDL and query history. Your schema expertise makes the training data</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Canner/WrenAI">Canner/WrenAI</a></td>
+<td>14K</td>
+<td>Semantic layer for AI-generated SQL — your data modeling skills define the layer</td>
+</tr>
+<tr>
+<td><a href="https://github.com/sinaptik-ai/pandas-ai">sinaptik-ai/pandas-ai</a></td>
+<td>23K</td>
+<td>Validate AI-generated SQL with your DBA expertise — catch performance issues AI misses</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Build this:</strong> A Text-to-SQL system trained on your schema expertise. Use Vanna with DDL from a database you know well — train it on your table definitions, column descriptions, and example queries. The key differentiator: add a query validation layer that checks AI-generated SQL against execution plans, flags missing indexes, and rewrites inefficient joins. No pure AI engineer can build this — it requires your DBA knowledge.</p>
+<p><strong>How to customize:</strong> Use a schema from your industry (healthcare claims, financial transactions, retail inventory). Add a "query explainer" that translates SQL back to plain English for business users. Build a performance dashboard showing query costs, execution times, and optimization suggestions. Add guardrails that prevent dangerous operations (DROP, DELETE without WHERE, full table scans on large tables).</p>
+<hr />
+<h3>Masters Graduate (CS / Data Science / AI) → AI Engineer</h3>
+<p><strong>Your story:</strong> "I have the ML theory and research depth. Now I build production AI systems that serve real users."</p>
+<p><strong>Summary example:</strong></p>
+<blockquote>
+<p>AI Engineer with MS in Computer Science (ML specialization) from [University]. Built and deployed a production RAG pipeline processing 50K documents with 92% retrieval accuracy using LangChain and FAISS. Thesis research in [transformer optimization / NLP / computer vision] provides deep understanding of model internals, evaluation methodology, and ML fundamentals that most practitioners lack. Combines graduate-level ML theory with hands-on production engineering — Docker, CI/CD, cloud deployment, and monitoring.</p>
+</blockquote>
+<p><strong>What to emphasize:</strong>
+- ML depth — you understand WHY models work, not just how to call APIs. Gradient descent, loss functions, attention mechanisms, evaluation metrics — you learned these formally
+- Research methodology — you know how to design experiments, evaluate results rigorously, and read papers. This is rare and valuable
+- Thesis/capstone project — your research IS a portfolio project. Frame it as an engineering achievement, not just an academic exercise
+- Production skills — this is your gap AND your opportunity. Every deployed project proves you're not "just academic"</p>
+<p><strong>The Masters trap (and how to avoid it):</strong></p>
+<table>
+<thead>
+<tr>
+<th>What Most MS Grads Do</th>
+<th>Why It Fails</th>
+<th>What To Do Instead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List coursework on resume</td>
+<td>Hiring managers don't care about courses</td>
+<td>Show projects that USED the coursework</td>
+</tr>
+<tr>
+<td>Describe thesis in academic language</td>
+<td>"Novel approach to multi-head attention optimization" means nothing to a hiring manager</td>
+<td>"Built a custom transformer that reduces inference latency by 40% — deployed on AWS"</td>
+</tr>
+<tr>
+<td>Only show Jupyter notebook projects</td>
+<td>Notebooks aren't production systems</td>
+<td>Deploy with FastAPI + Docker + monitoring. Add a URL someone can visit.</td>
+</tr>
+<tr>
+<td>Compete on theory with PhD candidates</td>
+<td>You won't out-research a PhD</td>
+<td>Compete on BUILDING — you can ship faster than most PhDs</td>
+</tr>
+<tr>
+<td>Apply only to ML Research roles</td>
+<td>Tiny job market, requires publications</td>
+<td>AI Engineer roles outnumber ML Research roles 20:1 and value your theory + engineering combo</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Best portfolio projects:</strong> RAG Pipeline with evaluation suite (shows theory + engineering), Fine-tuned model deployed as an API (shows you can ship ML), ML evaluation framework (shows rigor)</p>
+<p><strong>Resume bullets to adapt from your MS work:</strong>
+- "Thesis on transformer optimization" → "Built custom transformer architecture reducing inference latency by 40%, deployed as a production API on AWS serving 1K requests/day"
+- "Coursework in deep learning and NLP" → "Implemented attention mechanisms, fine-tuning (LoRA), and RAG pipelines from scratch — see deployed projects at [GitHub]"
+- "Research assistant in ML lab" → "Trained and evaluated 15+ model architectures on custom datasets, built reproducible experiment pipeline with MLflow tracking"
+- "Published paper on [topic]" → keep this, but add: "Applied findings to build [production system] — [link]"</p>
+<p><strong>Bridge Projects &amp; Repos</strong></p>
+<blockquote>
+<p>You have what self-taught engineers spend months trying to learn — ML fundamentals, math, and research methodology. Your gap is production engineering. Every project below closes that gap.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Repo</th>
+<th>Stars</th>
+<th>Why It Leverages Your Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/run-llama/llama_index">run-llama/llama_index</a></td>
+<td>40K+</td>
+<td>Your understanding of embeddings, retrieval, and evaluation makes you a power user — build advanced RAG with re-ranking, query routing, evaluation</td>
+</tr>
+<tr>
+<td><a href="https://github.com/huggingface/transformers">huggingface/transformers</a></td>
+<td>140K+</td>
+<td>You understand the architectures. Now fine-tune and deploy them. Start with a LoRA fine-tune on a domain-specific task</td>
+</tr>
+<tr>
+<td><a href="https://github.com/mlflow/mlflow">mlflow/mlflow</a></td>
+<td>20K+</td>
+<td>Bring your experiment tracking rigor to production — log runs, compare models, serve endpoints</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Build this:</strong> A fine-tuned model deployed as a production API with rigorous evaluation. Use your thesis domain — fine-tune a model (LoRA) on domain-specific data, build a FastAPI serving layer, add comprehensive evaluation (precision/recall, A/B test framework, drift detection), containerize with Docker, deploy to cloud. The key differentiator: your evaluation methodology will be deeper than any bootcamp grad's because you actually understand the metrics.</p>
+<p><strong>How to customize:</strong> Use data from your thesis or research area. If you worked on NLP, build a domain-specific text classifier with production monitoring. If computer vision, deploy an image classification API with confidence calibration. If recommendation systems, build a real-time rec engine with offline/online evaluation. Add an evaluation dashboard that shows metrics a hiring manager would care about — not just accuracy, but latency, cost per request, and drift detection over time. Write a blog post explaining your approach — your ability to communicate ML concepts clearly is a selling point.</p>
+<hr />
+<h2>4. Resume Tips</h2>
+<h3>ATS Optimization</h3>
+<table>
+<thead>
+<tr>
+<th>Do</th>
+<th>Don't</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use standard section headers (Experience, Skills, Education)</td>
+<td>Use creative headers ("My Journey," "Toolkit")</td>
+</tr>
+<tr>
+<td>Match exact keywords from the job posting</td>
+<td>Paraphrase — ATS matches exact strings</td>
+</tr>
+<tr>
+<td>Use a single-column layout</td>
+<td>Use tables, graphics, multi-column designs</td>
+</tr>
+<tr>
+<td>Submit as PDF</td>
+<td>Submit as .docx (formatting can break)</td>
+</tr>
+<tr>
+<td>Include both acronyms and full names ("Natural Language Processing (NLP)")</td>
+<td>Use only acronyms</td>
+</tr>
+<tr>
+<td>List specific tools ("LangChain, FAISS, ChromaDB")</td>
+<td>Say "various LLM frameworks"</td>
+</tr>
+</tbody>
+</table>
+<h3>Quantification — The #1 Differentiator</h3>
+<blockquote>
+<p>Hiring managers see 200 resumes that say "built a chatbot." They remember the one that says "built a chatbot serving 5K users/day with 94% intent accuracy and sub-1s response time."</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Weak</th>
+<th>Strong</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Improved model performance</td>
+<td>Improved F1 score from 0.72 to 0.91 on production dataset</td>
+</tr>
+<tr>
+<td>Built a RAG pipeline</td>
+<td>Built a RAG pipeline processing 50K documents with 92% retrieval accuracy</td>
+</tr>
+<tr>
+<td>Worked on LLM deployment</td>
+<td>Deployed fine-tuned Llama-2-7B to SageMaker, handling 2K concurrent requests</td>
+</tr>
+<tr>
+<td>Helped reduce costs</td>
+<td>Reduced OpenAI API costs by 35% ($12K/month savings) through prompt optimization</td>
+</tr>
+<tr>
+<td>Used prompt engineering</td>
+<td>Designed prompt templates that reduced hallucination rate from 18% to 4%</td>
+</tr>
+<tr>
+<td>Familiar with vector databases</td>
+<td>Implemented semantic search over 1M embeddings using FAISS with p95 latency &lt; 50ms</td>
+</tr>
+</tbody>
+</table>
+<h3>What to Avoid</h3>
+<table>
+<thead>
+<tr>
+<th>Mistake</th>
+<th>Why It Hurts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Familiar with PyTorch"</td>
+<td>Signals you've read about it, not used it. Say "Built training pipelines in PyTorch"</td>
+</tr>
+<tr>
+<td>Listing every technology you've touched</td>
+<td>Dilutes signal. Only list tools you can discuss in an interview</td>
+</tr>
+<tr>
+<td>Graphics, icons, photos</td>
+<td>ATS can't parse them. Some systems reject the entire resume</td>
+</tr>
+<tr>
+<td>Objective statement</td>
+<td>Outdated. Use a Summary instead</td>
+</tr>
+<tr>
+<td>Irrelevant experience (detailed)</td>
+<td>Your barista job doesn't need 4 bullet points. One line is fine</td>
+</tr>
+<tr>
+<td>Typos</td>
+<td>Instant reject. Proofread, then have someone else proofread</td>
+</tr>
+<tr>
+<td>Generic template language</td>
+<td>"Results-driven professional" — everyone says this. Be specific</td>
+</tr>
+<tr>
+<td>Longer than one page (entry-level)</td>
+<td>Shows poor prioritization skills</td>
+</tr>
+<tr>
+<td>Only GenAI, no traditional ML</td>
+<td>Companies need both. Show you can build a logistic regression classifier AND a RAG pipeline</td>
+</tr>
+<tr>
+<td>No cost/business metrics</td>
+<td>"Built a chatbot" vs "Built a chatbot that reduced support costs by $50K/month" — which gets the callback?</td>
+</tr>
+</tbody>
+</table>
+<h3>The Business Impact Frame</h3>
+<blockquote>
+<p>Hiring managers and enterprise leaders think in terms of business outcomes, not technology. Frame every bullet point through one of these lenses:</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Business Lens</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cost reduction</strong></td>
+<td>"Reduced API costs by 35% ($12K/month savings) through prompt optimization and response caching"</td>
+</tr>
+<tr>
+<td><strong>Speed / Latency</strong></td>
+<td>"Cut document processing time from 4 hours to 15 minutes using automated AI pipeline"</td>
+</tr>
+<tr>
+<td><strong>Scale</strong></td>
+<td>"Built system serving 10K queries/day across 500 concurrent users"</td>
+</tr>
+<tr>
+<td><strong>Accuracy / Quality</strong></td>
+<td>"Improved retrieval accuracy from 78% to 92%, reducing support escalations by 40%"</td>
+</tr>
+<tr>
+<td><strong>Automation</strong></td>
+<td>"Automated 70% of tier-1 support tickets, freeing 3 agents for complex cases"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Why this matters:</strong> 72% of large enterprises have deployed AI (McKinsey). They're not asking "should we use AI?" — they're asking "how fast can we move?" Your resume should show you can help them move faster, cheaper, and more accurately.</p>
+</blockquote>
+<hr />
+<h2>5. GitHub as Portfolio</h2>
+<p>Your GitHub profile is your second resume. Hiring managers WILL check it.</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>What to Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Profile README</strong></td>
+<td>Add a short bio, tech stack, and links to top 3 projects</td>
+</tr>
+<tr>
+<td><strong>Pinned repos</strong></td>
+<td>Pin your best 3-6 repositories (not forks)</td>
+</tr>
+<tr>
+<td><strong>README per project</strong></td>
+<td>Problem statement, architecture diagram, tech stack, how to run, demo link</td>
+</tr>
+<tr>
+<td><strong>Clean code</strong></td>
+<td>Type hints, docstrings for public APIs, consistent style</td>
+</tr>
+<tr>
+<td><strong>Commit history</strong></td>
+<td>Regular commits with meaningful messages (not "fix stuff")</td>
+</tr>
+<tr>
+<td><strong>Deployed demos</strong></td>
+<td>At least one project with a live demo (Streamlit, HuggingFace Spaces, Vercel)</td>
+</tr>
+<tr>
+<td><strong>2-min demo video</strong></td>
+<td>Record a walkthrough (Loom or screen recording). A video is 10x more credible than a repo alone. Link it in your README.</td>
+</tr>
+<tr>
+<td><strong>No API keys</strong></td>
+<td>Use <code>.env</code> files and <code>.gitignore</code>. Leaked keys = instant red flag</td>
+</tr>
+</tbody>
+</table>
+<h3>What Recruiters Search For on GitHub</h3>
+<blockquote>
+<p>Recruiters and hiring managers literally search GitHub for these keywords. Make sure your repos use them in README titles, descriptions, and code.</p>
+</blockquote>
+<p><strong>High-signal keywords:</strong> <code>RAG</code>, <code>LangChain</code>, <code>LLM</code>, <code>vector database</code>, <code>AI chatbot</code>, <code>fine-tuning</code>, <code>embeddings</code>, <code>FAISS</code>, <code>prompt engineering</code>, <code>multi-agent</code></p>
+<p><strong>Example:</strong> Your repo name should be <code>enterprise-rag-pipeline</code> — not <code>my-project-1</code>. Your README should include these terms naturally in the description.</p>
+<h3>5 Portfolio Projects That Get You Hired</h3>
+<blockquote>
+<p>These are the projects that map directly to what companies are building right now. Build 2-3 of these.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Project</th>
+<th>What It Proves</th>
+<th>Tech Stack</th>
+<th>Resume Bullet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>RAG Chatbot</strong></td>
+<td>You can build the #1 thing companies need</td>
+<td>LangChain, FAISS/Pinecone, FastAPI, Streamlit</td>
+<td>"Built document Q&amp;A system processing 50K docs with 92% retrieval accuracy"</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Resume/Job Matcher</strong></td>
+<td>You understand embeddings + real-world NLP</td>
+<td>Sentence-transformers, FAISS, Streamlit</td>
+<td>"Built semantic job matching system using embeddings with 87% relevance score"</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Customer Support Copilot</strong></td>
+<td>You can build multi-step agents</td>
+<td>LangGraph, tool calling, conversation memory</td>
+<td>"Built support agent handling 15 intent categories with 94% accuracy and human escalation"</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Natural Language to SQL</strong></td>
+<td>You bridge AI and data engineering</td>
+<td>LLM + schema parsing, SQLite/PostgreSQL</td>
+<td>"Built NL-to-SQL interface generating queries across 12 tables with 89% execution accuracy"</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Code Review Assistant</strong></td>
+<td>You can build developer tools with AI</td>
+<td>AST parsing, LLM analysis, GitHub integration</td>
+<td>"Built AI code reviewer analyzing Python PRs for bugs, style, and security issues"</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Minimum viable portfolio:</strong> GitHub repo with clean README + deployed demo (Streamlit/HuggingFace Spaces) + 2-min demo video. This combination is what separates callbacks from silence.</p>
+</blockquote>
+<h3>Open-Source Starting Points</h3>
+<blockquote>
+<p><strong>Don't start from zero.</strong> Fork a proven project, understand its architecture, then customize it for your domain. This is exactly how professional engineers work — and hiring managers know it. The key: you must be able to explain every line of code you ship.</p>
+</blockquote>
+<h4>For Each Portfolio Project</h4>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>Fork This</th>
+<th>Stars</th>
+<th>Why This One</th>
+<th>How to Make It Yours</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RAG Chatbot</strong></td>
+<td><a href="https://github.com/weaviate/Verba">weaviate/Verba</a></td>
+<td>7.6K</td>
+<td>Clean UI, simple codebase, runs in under an hour</td>
+<td>Point it at YOUR documents — company policies, medical papers, legal contracts. Add hybrid search (semantic + keyword). Add evaluation metrics (RAGAS).</td>
+</tr>
+<tr>
+<td><strong>RAG Chatbot</strong> (advanced)</td>
+<td><a href="https://github.com/infiniflow/ragflow">infiniflow/ragflow</a></td>
+<td>75K</td>
+<td>Production-grade, impressive demo</td>
+<td>Swap in domain-specific chunking strategy. Add authentication. Deploy to cloud with monitoring.</td>
+</tr>
+<tr>
+<td><strong>RAG Chatbot</strong> (graph-based)</td>
+<td><a href="https://github.com/HKUDS/LightRAG">HKUDS/LightRAG</a></td>
+<td>29K</td>
+<td>Knowledge graph RAG — differentiator on resumes</td>
+<td>Build a knowledge graph over your domain's documents. Graph-based RAG is a conversation starter in interviews.</td>
+</tr>
+<tr>
+<td><strong>Resume/Job Matcher</strong></td>
+<td><a href="https://github.com/srbhr/Resume-Matcher">srbhr/Resume-Matcher</a></td>
+<td>26K</td>
+<td>Largest community, modern Python stack (FastAPI, uv)</td>
+<td>Replace keyword matching with embedding-based semantic matching. Add a recruiter dashboard. Integrate with job board APIs.</td>
+</tr>
+<tr>
+<td><strong>Resume/Job Matcher</strong> (simple)</td>
+<td><a href="https://github.com/amiradridi/Job-Resume-Matching">amiradridi/Job-Resume-Matching</a></td>
+<td>131</td>
+<td>Minimal codebase — perfect to learn then upgrade</td>
+<td>Upgrade TF-IDF to sentence-transformers. Add Streamlit UI. Add batch processing for multiple resumes.</td>
+</tr>
+<tr>
+<td><strong>Support Copilot</strong></td>
+<td><a href="https://github.com/crewAIInc/crewAI-examples">crewAIInc/crewAI-examples</a></td>
+<td>5.6K</td>
+<td>Ready-to-fork customer support example</td>
+<td>Customize agents for YOUR domain (HR, IT helpdesk, healthcare). Add tool calling (CRM lookup, order status). Add escalation logic.</td>
+</tr>
+<tr>
+<td><strong>Support Copilot</strong></td>
+<td><a href="https://github.com/NirDiamant/GenAI_Agents">NirDiamant/GenAI_Agents</a></td>
+<td>20K</td>
+<td>Tutorial format — learn while building</td>
+<td>Fork the <code>customer_support_agent_langgraph.ipynb</code>. Add sentiment-based routing, conversation memory, safety guardrails.</td>
+</tr>
+<tr>
+<td><strong>Support Copilot</strong> (official)</td>
+<td><a href="https://github.com/langchain-ai/langgraph">langchain-ai/langgraph</a></td>
+<td>26K</td>
+<td>Official customer support tutorial included</td>
+<td>Fork <code>docs/tutorials/customer-support/</code>. Swap airline domain for YOUR domain. Add human-in-the-loop escalation.</td>
+</tr>
+<tr>
+<td><strong>NL-to-SQL</strong></td>
+<td><a href="https://github.com/vanna-ai/vanna">vanna-ai/vanna</a></td>
+<td>23K</td>
+<td>Best standalone text-to-SQL, demo-ready</td>
+<td>Connect to YOUR database (school records, inventory, sales). Add query explanation in plain English. Deploy with Streamlit.</td>
+</tr>
+<tr>
+<td><strong>NL-to-SQL</strong> (enterprise)</td>
+<td><a href="https://github.com/eosphoros-ai/DB-GPT">eosphoros-ai/DB-GPT</a></td>
+<td>18K</td>
+<td>Full data-app platform with visualization</td>
+<td>Build a natural language analytics dashboard for a specific business domain.</td>
+</tr>
+<tr>
+<td><strong>Code Review</strong></td>
+<td><a href="https://github.com/qodo-ai/pr-agent">qodo-ai/pr-agent</a></td>
+<td>10.5K</td>
+<td>Most mature AI code review tool</td>
+<td>Add custom review rules for your domain (security checks, style enforcement). Deploy on your own repos.</td>
+</tr>
+<tr>
+<td><strong>Code Review</strong> (simple)</td>
+<td><a href="https://github.com/codedog-ai/codedog">codedog-ai/codedog</a></td>
+<td>195</td>
+<td>Has a scoring system — portfolio-worthy concept</td>
+<td>Add scoring dimensions: performance, test coverage, accessibility. Show before/after scores.</td>
+</tr>
+</tbody>
+</table>
+<h4>How to Personalize (This Is What Gets You Hired)</h4>
+<p>Forking alone doesn't impress. Here's how to make it YOUR project:</p>
+<ol>
+<li>
+<p><strong>Swap the domain.</strong> The RAG chatbot demo uses generic docs → make yours answer questions about healthcare policies, legal contracts, or real estate listings. Domain specificity signals real-world thinking.</p>
+</li>
+<li>
+<p><strong>Add what's missing.</strong> Every open-source project has gaps. Add evaluation metrics, error handling, authentication, rate limiting, or cost tracking. These are the things production systems need.</p>
+</li>
+<li>
+<p><strong>Connect to your past work.</strong> Were you a Java developer? Add AI to a Spring Boot app. Data analyst? Build NL-to-SQL over a real dataset you've worked with. Teacher? Build a RAG tutor over course materials. Your unique background IS the differentiator.</p>
+</li>
+<li>
+<p><strong>Write the README for the hiring manager.</strong> Problem statement → your approach → architecture diagram → results with numbers → how to run it → demo video link. This is what they evaluate.</p>
+</li>
+<li>
+<p><strong>Deploy it.</strong> A running app at a URL beats a repo every time. Streamlit Cloud, HuggingFace Spaces, and Vercel all have generous free tiers.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>The fork-and-customize pattern in interviews:</strong> "I started with [open-source project] to understand the architecture, then customized it for [domain] by adding [specific features]. The key challenge was [X] which I solved by [Y], resulting in [metric]." — This shows engineering maturity, not just coding ability.</p>
+</blockquote>
+<h3>Add AI to What You've Already Built</h3>
+<blockquote>
+<p><strong>This is the highest-impact portfolio strategy for career switchers.</strong> Every hiring manager has seen another tutorial RAG chatbot. Very few have seen someone take a real system and intelligently add AI to it. That's what the actual job is — companies aren't building AI from scratch, they're adding AI to existing products.</p>
+</blockquote>
+<h4>The Framework: 4 Steps</h4>
+<p><strong>Step 1: Pick your existing project</strong> — any app, pipeline, tool, or system you've built before (Java, Python, JavaScript, anything).</p>
+<p><strong>Step 2: Find the AI opportunity</strong> — look for anything that's manual, slow, rule-based, or "dumb":</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Users search by exact keywords</td>
+<td>Search could be semantic (understand meaning, not just words)</td>
+</tr>
+<tr>
+<td>Someone manually categorizes or labels data</td>
+<td>Classification model or LLM can automate it</td>
+</tr>
+<tr>
+<td>Users ask the same questions repeatedly</td>
+<td>Chatbot or Q&amp;A system over your docs</td>
+</tr>
+<tr>
+<td>Reports require manual summarization</td>
+<td>LLM summarization pipeline</td>
+</tr>
+<tr>
+<td>Data entry from unstructured sources</td>
+<td>Extraction pipeline (NER, OCR + LLM)</td>
+</tr>
+<tr>
+<td>Recommendations are rule-based or nonexistent</td>
+<td>Embedding-based similarity or collaborative filtering</td>
+</tr>
+<tr>
+<td>Users write SQL or filters manually</td>
+<td>Natural language interface (NL-to-SQL)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Step 3: Build the AI layer</strong> — don't rewrite the whole app. Add AI as a service layer:</p>
+<pre><code>Existing App → API call → AI Service → Response back to app
+</code></pre>
+<p>This mirrors real enterprise architecture. Companies don't throw away their Java monolith — they add an AI microservice alongside it.</p>
+<p><strong>Step 4: Measure before vs. after</strong> — this is what creates the resume bullet:
+- Before: "Users searched 3 minutes to find the right document"
+- After: "Semantic search returns relevant docs in 2 seconds (95% relevance rate)"</p>
+<h4>Examples: Common Projects → AI Upgrades</h4>
+<table>
+<thead>
+<tr>
+<th>Your Existing Project</th>
+<th>AI You Can Add</th>
+<th>What It Proves</th>
+<th>Resume Bullet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>E-commerce / catalog app</strong></td>
+<td>Semantic product search + recommendation engine</td>
+<td>Embeddings, vector DB, personalization</td>
+<td>"Added AI-powered semantic search to product catalog, improving search-to-purchase rate by 30%"</td>
+</tr>
+<tr>
+<td><strong>Blog / CMS / wiki</strong></td>
+<td>RAG-powered Q&amp;A over content + auto-tagging</td>
+<td>RAG pipeline, classification</td>
+<td>"Built Q&amp;A system over 500 articles using RAG, reducing support tickets by 40%"</td>
+</tr>
+<tr>
+<td><strong>Support ticketing system</strong></td>
+<td>Intent classification + suggested responses</td>
+<td>NLP, classification, LLM integration</td>
+<td>"Added AI triage to support system, auto-classifying 80% of tickets with 91% accuracy"</td>
+</tr>
+<tr>
+<td><strong>Data dashboard / reporting</strong></td>
+<td>Natural language querying (NL-to-SQL)</td>
+<td>Text-to-SQL, schema understanding</td>
+<td>"Built NL interface for analytics dashboard — non-technical users query data in plain English"</td>
+</tr>
+<tr>
+<td><strong>Internal documentation</strong></td>
+<td>Intelligent search + summarization</td>
+<td>Embeddings, chunking, summarization</td>
+<td>"Deployed semantic search over 10K internal docs, reducing information lookup time by 70%"</td>
+</tr>
+<tr>
+<td><strong>CRUD / inventory app</strong></td>
+<td>Anomaly detection + demand forecasting</td>
+<td>Traditional ML, time series</td>
+<td>"Added ML-based demand forecasting, reducing overstock by 25% and stockouts by 40%"</td>
+</tr>
+<tr>
+<td><strong>Chat / messaging app</strong></td>
+<td>Sentiment analysis + smart routing</td>
+<td>NLP, classification, real-time ML</td>
+<td>"Built sentiment-aware routing that escalates negative conversations to senior agents in real time"</td>
+</tr>
+<tr>
+<td><strong>Mobile / web app (any)</strong></td>
+<td>AI-powered content generation or personalization</td>
+<td>LLM API integration, prompt engineering</td>
+<td>"Integrated LLM-powered personalized recommendations, increasing user engagement by 35%"</td>
+</tr>
+</tbody>
+</table>
+<h4>Why This Strategy Works</h4>
+<ol>
+<li><strong>It's what the job actually is.</strong> 90% of AI engineering work is adding AI to existing systems, not building from scratch.</li>
+<li><strong>It shows integration skills.</strong> Calling an API in a notebook is easy. Making AI work inside a real system with real data, error handling, and users is engineering.</li>
+<li><strong>It leverages your experience.</strong> A Java developer who adds semantic search to their Spring Boot app is more credible than someone who only built tutorial projects.</li>
+<li><strong>It creates better stories.</strong> "I had this app, users struggled with X, I added AI, and the result was Y" — that's a complete narrative for interviews.</li>
+<li><strong>It produces genuine metrics.</strong> Real users generate real numbers. Tutorial projects generate made-up numbers.</li>
+</ol>
+<blockquote>
+<p><strong>Don't have an existing project?</strong> Fork one of these and add AI to it. The "before and after" story is powerful even with a forked app.</p>
+</blockquote>
+<h4>Non-AI Apps to Fork and AI-ify</h4>
+<table>
+<thead>
+<tr>
+<th>App</th>
+<th>Repo</th>
+<th>Stars</th>
+<th>What It Is</th>
+<th>AI You Can Add</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Full-Stack Web App</strong></td>
+<td><a href="https://github.com/tiangolo/full-stack-fastapi-template">tiangolo/full-stack-fastapi-template</a></td>
+<td>42K</td>
+<td>FastAPI + React + PostgreSQL + Docker. The gold standard Python full-stack starter.</td>
+<td>Build any CRUD app (task manager, CRM, inventory), then add: AI search, chatbot assistant, smart recommendations, auto-categorization. FastAPI makes adding LLM endpoints trivial.</td>
+</tr>
+<tr>
+<td><strong>E-Commerce</strong></td>
+<td><a href="https://github.com/saleor/saleor">saleor/saleor</a></td>
+<td>22.7K</td>
+<td>Django + GraphQL headless commerce. Products, orders, payments, customers.</td>
+<td>Add: AI product recommendations, semantic product search, AI-generated descriptions, chatbot shopping assistant, demand forecasting.</td>
+</tr>
+<tr>
+<td><strong>Inventory Management</strong></td>
+<td><a href="https://github.com/inventree/InvenTree">inventree/InvenTree</a></td>
+<td>6.6K</td>
+<td>Django inventory system with stock control, part tracking, REST API.</td>
+<td>Add: demand prediction, natural language queries ("how many blue widgets in warehouse 3?"), anomaly detection, automated reorder suggestions.</td>
+</tr>
+<tr>
+<td><strong>CRUD Builder</strong></td>
+<td><a href="https://github.com/dpgaspar/Flask-AppBuilder">dpgaspar/Flask-AppBuilder</a></td>
+<td>4.9K</td>
+<td>Auto-generates CRUD forms and views from your models. Fastest path from zero to working app.</td>
+<td>Generate a CRUD app in minutes, then add: LLM search bar, AI assistant sidebar, automated data insights, smart form auto-fill.</td>
+</tr>
+<tr>
+<td><strong>Minimal API</strong></td>
+<td><a href="https://github.com/rafsaf/minimal-fastapi-postgres-template">rafsaf/minimal-fastapi-postgres-template</a></td>
+<td>563</td>
+<td>Clean async FastAPI + PostgreSQL + Docker. Small enough to own every line.</td>
+<td>Build your domain (helpdesk, blog, expense tracker), then add AI. Small codebase = you can explain everything in an interview.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>The interview story writes itself:</strong> "I forked [app], built [domain feature], then added AI-powered [capability] that improved [metric] by [X%]. The hardest part was [integration challenge], which I solved by [approach]."</p>
+</blockquote>
+<h3>5 Ways to Get Real Experience Without a Job</h3>
+<blockquote>
+<p>You don't need to be employed as an AI Engineer to have AI engineering experience. These are legitimate experience sources that belong on your resume.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Strategy</th>
+<th>What You Get</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Turn projects into products</strong></td>
+<td>Deploy your RAG chatbot. Get 10 users. Fix what breaks. Now it's a production system, not a homework assignment.</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Solve problems for small organizations</strong></td>
+<td>Local nonprofits, small businesses, and student orgs need AI tools but can't afford engineers. Build a document search tool for a local nonprofit, a chatbot for a small business. Real users = real resume bullets.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Build AI tools for your own workflow</strong></td>
+<td>Build a tool that summarizes your meeting notes, organizes your job search, or reviews your code. If you use it daily, you'll discover real production issues.</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Participate in engineering communities</strong></td>
+<td>Contribute to open-source AI projects. Answer questions on Stack Overflow. Write technical blog posts. Public contributions are visible proof of competence.</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Build systems that handle imperfect data</strong></td>
+<td>Real data is messy — missing fields, inconsistent formats, duplicates. Build pipelines that handle this gracefully. Hiring managers value this over clean-dataset demos.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>The mindset shift:</strong> Stop asking "does this run?" Start asking <strong>"does this system survive real users?"</strong> That question changes everything about how you build.</p>
+</blockquote>
+<hr />
+<h2>6. Accelerator-to-Resume Mapping</h2>
+<blockquote>
+<p>This table shows which Accelerator phases unlock which resume-ready skills and projects.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Accelerator Phase</th>
+<th>Weeks</th>
+<th>Resume Skills Unlocked</th>
+<th>Resume-Ready Projects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Foundation — Python &amp; ML</strong></td>
+<td>1-3</td>
+<td>Python, Scikit-learn, Pandas, NumPy, PyTorch basics, model evaluation metrics</td>
+<td>ML classification/regression project with evaluation pipeline</td>
+</tr>
+<tr>
+<td><strong>Foundation — Deep Learning &amp; Transformers</strong></td>
+<td>4-5</td>
+<td>PyTorch training loops, neural networks, transformer architecture, attention mechanism</td>
+<td>Custom model training pipeline with experiment tracking</td>
+</tr>
+<tr>
+<td><strong>Foundation — Fine-Tuning</strong></td>
+<td>6</td>
+<td>LoRA, QLoRA, PEFT, Hugging Face Transformers, dataset preparation</td>
+<td>Fine-tuned model for domain-specific task</td>
+</tr>
+<tr>
+<td><strong>Core — Cloud &amp; MLOps</strong></td>
+<td>7</td>
+<td>AWS/GCP, Docker, CI/CD, MLflow, model deployment, monitoring</td>
+<td>Deployed ML model with CI/CD and monitoring</td>
+</tr>
+<tr>
+<td><strong>Core — Context Engineering &amp; NLP</strong></td>
+<td>8-9</td>
+<td>Prompt engineering, embeddings, NLP pipelines, text classification</td>
+<td>NLP pipeline or prompt engineering framework</td>
+</tr>
+<tr>
+<td><strong>Core — Advanced RAG</strong></td>
+<td>10</td>
+<td>LangChain, FAISS, ChromaDB, hybrid search, evaluation (RAGAS), chunking strategies</td>
+<td>Production RAG pipeline with evaluation metrics</td>
+</tr>
+<tr>
+<td><strong>Core — Conversational AI</strong></td>
+<td>11</td>
+<td>Multi-turn dialogue, memory, tool calling, conversation design</td>
+<td>Conversational AI system with tool integration</td>
+</tr>
+<tr>
+<td><strong>Applied — Enterprise &amp; Governance</strong></td>
+<td>12-13</td>
+<td>Security, compliance, cost optimization, multi-tenant architecture, LLMOps</td>
+<td>Enterprise-grade AI system with governance</td>
+</tr>
+<tr>
+<td><strong>Applied — Multi-Agent &amp; Voice AI</strong></td>
+<td>14-15</td>
+<td>LangGraph, multi-agent orchestration, Voice AI (RetellAI, Deepgram)</td>
+<td>Multi-agent system or voice AI application</td>
+</tr>
+<tr>
+<td><strong>Applied — Capstone</strong></td>
+<td>16</td>
+<td>End-to-end system design, presentation, documentation</td>
+<td>Full capstone project (your flagship portfolio piece)</td>
+</tr>
+</tbody>
+</table>
+<h3>Building Your Resume Over Time</h3>
+<table>
+<thead>
+<tr>
+<th>After Week...</th>
+<th>Your Resume Can Say...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Week 3</strong></td>
+<td>"Built ML classification pipeline in Python with Scikit-learn, achieving 91% F1 score on customer churn prediction"</td>
+</tr>
+<tr>
+<td><strong>Week 6</strong></td>
+<td>"Fine-tuned Llama-2-7B using LoRA for domain-specific Q&amp;A, reducing error rate by 35%"</td>
+</tr>
+<tr>
+<td><strong>Week 7</strong></td>
+<td>"Deployed ML model to AWS SageMaker with Docker, GitHub Actions CI/CD, and CloudWatch monitoring"</td>
+</tr>
+<tr>
+<td><strong>Week 10</strong></td>
+<td>"Built RAG pipeline processing 50K documents with LangChain and FAISS, achieving 92% retrieval accuracy"</td>
+</tr>
+<tr>
+<td><strong>Week 13</strong></td>
+<td>"Designed multi-tenant AI system with role-based access, cost controls, and compliance guardrails"</td>
+</tr>
+<tr>
+<td><strong>Week 16</strong></td>
+<td>"Architected and deployed end-to-end AI application: data ingestion, model serving, RAG retrieval, agent orchestration, monitoring — serving 10K queries/day"</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>7. Cover Letter (When Required)</h2>
+<blockquote>
+<p>Most AI roles don't require cover letters. When they do, keep it to 3 paragraphs.</p>
+</blockquote>
+<p><strong>Paragraph 1 — Hook:</strong> Name the role and why this specific company. One sentence that shows you've done research.</p>
+<p><strong>Paragraph 2 — Proof:</strong> Your strongest 2-3 accomplishments mapped to their job requirements. Quantified.</p>
+<p><strong>Paragraph 3 — Close:</strong> What you'll bring in the first 90 days. Clear call to action.</p>
+<p><strong>Example opening:</strong></p>
+<blockquote>
+<p>I'm applying for the AI Engineer role at [Company] because your work on [specific product/feature] aligns with my experience building production RAG systems. At [Previous Company/Project], I built a document Q&amp;A pipeline that processes 50K documents and serves 10K queries/day with 92% retrieval accuracy — the same kind of system your team is scaling.</p>
+</blockquote>
+<hr />
+<h2>Key Takeaways</h2>
+<ol>
+<li><strong>Match keywords exactly</strong> — your resume is a search optimization problem</li>
+<li><strong>Quantify everything</strong> — numbers are the difference between "built a chatbot" and a callback</li>
+<li><strong>Show deployed work</strong> — GitHub repos with live demos beat certificates</li>
+<li><strong>One page</strong> — if you can't prioritize on a resume, why would they trust you with a system?</li>
+<li><strong>Customize per application</strong> — one generic resume for every job is a losing strategy</li>
+</ol>
+<hr />
+<h3>About This Guide</h3>
+<table>
+<thead>
+<tr>
+<th>Detail</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Program</strong></td>
+<td>AI Engineer Accelerator</td>
+</tr>
+<tr>
+<td><strong>Author</strong></td>
+<td>Sunil Mogadati</td>
+</tr>
+<tr>
+<td><strong>Community</strong></td>
+<td><a href="https://www.skool.com/workwise">WorkWise on Skool</a></td>
+</tr>
+<tr>
+<td><strong>Next step</strong></td>
+<td><a href="https://github.com/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Interview_Prep.ipynb">AI Engineer Interview Prep →</a></td>
+</tr>
+</tbody>
+</table>
+</body></html>

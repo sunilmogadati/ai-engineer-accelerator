@@ -1,8 +1,8 @@
 # AI Engineer Accelerator — Interactive Notebooks
 
-**By Sunil Mogadati** | Emergtech AI Engineer Accelerator
+**By Sunil Mogadati** | AI Engineer Accelerator
 
-Three interactive guides that take you from Python fundamentals through databases to production AI systems. Every cell is runnable. No slides, no fluff — just code and concepts.
+Interactive guides, interview prep, and career resources for aspiring AI Engineers. Every cell is runnable. No slides, no fluff — just code and concepts.
 
 ---
 
@@ -22,6 +22,21 @@ Three interactive guides that take you from Python fundamentals through database
 > SQL, NoSQL, and Vector Databases — from SQLite basics through ChromaDB semantic search to production patterns. Includes installation guides, real-world scenarios, and hands-on exercises.
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Database_Essentials.ipynb)
+
+### 4. Math for AI Engineers
+> Vectors, cosine similarity, matrices, probability, gradient descent, loss functions, backpropagation, PCA — the math that makes ML make sense.
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Math_for_AI.ipynb)
+
+### 5. Interview Prep
+> Coding exercises, ML theory Q&A, system design walkthroughs, behavioral prep, and study plans. 39 cells, no API keys needed.
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Interview_Prep.ipynb)
+
+### 6. Resume Template
+> Composite AI Engineer job posting, annotated resume template, ATS optimization tips, and Accelerator-to-resume skill mapping.
+
+[View Resume Template](AI_Engineer_Resume_Template.md)
 
 ---
 
@@ -52,6 +67,9 @@ jupyter notebook
 | Python for AI Engineers | 21 sections | 25+ | Beginners / career switchers |
 | Java Dev Express Guide | 5 parts | 20+ | Experienced Java/Scala developers |
 | Database Essentials | 22 sections | 22+ | All AI engineers |
+| Math for AI Engineers | 14 sections | 12+ | All AI engineers |
+| Interview Prep | 9 sections | 18 | Job seekers |
+| Resume Template | 6 sections | — | Job seekers |
 
 ### Topics Covered
 
@@ -81,7 +99,7 @@ See `requirements.txt` for the full list.
 
 ## License
 
-These materials are part of the Emergtech AI Engineer Accelerator program.
+These materials are part of the AI Engineer Accelerator program.
 
 ---
 
