@@ -42,12 +42,47 @@ Data arrives from multiple sources in multiple formats:
 
 **The DE job:** Ingest all of these into a single storage layer. The call center dataset uses GCS (Google Cloud Storage) as the landing zone — raw files arrive here first.
 
+**GCP setup (one-time):**
 ```bash
-# Upload raw files to the Bronze layer (raw, untouched)
-gsutil cp calls.json gs://call-center-pipeline/bronze/
-gsutil cp campaigns.csv gs://call-center-pipeline/bronze/
-gsutil cp orders.csv gs://call-center-pipeline/bronze/
+# Install Google Cloud CLI if not already installed
+# https://cloud.google.com/sdk/docs/install
+
+# Login and set project
+gcloud auth login
+gcloud config set project YOUR_PROJECT_ID
+
+# Enable required APIs
+gcloud services enable bigquery.googleapis.com
+gcloud services enable storage.googleapis.com
 ```
+
+**The Medallion Architecture (Bronze → Silver → Gold):**
+
+Most modern data pipelines organize data into three layers, named after metals — each layer is cleaner and more valuable than the previous one:
+
+| Layer | What It Contains | Analogy |
+|:---|:---|:---|
+| **Bronze** | Raw data exactly as it arrived — no cleaning, no changes. Duplicates, nulls, format issues all present. | The mine — raw ore, unprocessed. |
+| **Silver** | Cleaned data — duplicates removed, nulls handled, types corrected, timestamps standardized. | The refinery — impurities removed, consistent quality. |
+| **Gold** | Business-ready data — aggregated, modeled (star schema), optimized for analysis and ML. | The finished product — ready to use, ready to sell. |
+
+The pipeline moves data from Bronze → Silver → Gold. Each layer has a clear job. If something breaks, you know which layer to investigate. Raw data in Bronze is never modified — it is the source of truth you can always go back to.
+
+**Upload raw files to the Bronze layer (raw, untouched):**
+```bash
+# Create a storage bucket (name must be globally unique)
+gcloud storage buckets create gs://call-center-pipeline-YOUR_NAME/ --location=us-central1
+
+# Upload data files
+gcloud storage cp calls.json gs://call-center-pipeline-YOUR_NAME/bronze/
+gcloud storage cp campaigns.csv gs://call-center-pipeline-YOUR_NAME/bronze/
+gcloud storage cp orders.csv gs://call-center-pipeline-YOUR_NAME/bronze/
+
+# Verify
+gcloud storage ls gs://call-center-pipeline-YOUR_NAME/bronze/
+```
+
+> **Note:** `gcloud storage` is the current CLI. Older tutorials use `gsutil` — same functionality, `gcloud storage` is the replacement. Both work today.
 
 ### Stage 2: Data Cleaning and Transformation (DE)
 
