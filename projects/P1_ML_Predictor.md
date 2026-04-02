@@ -88,7 +88,7 @@ Your project must include ALL of the following:
 After completing the project, answer these questions in a separate `REFLECTION.md`:
 
 1. What was the hardest part of this project?
-2. If you saw the instructor's solution, what would you do differently?
+2. If you saw the reference solution, what would you do differently?
 3. What surprised you in the data or results?
 4. If you had to deploy this model tomorrow, what would you need to add?
 
