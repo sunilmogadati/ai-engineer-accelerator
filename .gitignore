@@ -36,3 +36,6 @@ Thumbs.db
 
 # ChromaDB local storage
 chroma_data/
+
+# Old single-file concepts (replaced by 10-chapter directories)
+concepts/Deep_Learning_Concepts.md
