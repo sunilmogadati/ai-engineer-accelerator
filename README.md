@@ -1,106 +1,120 @@
-# AI Engineer Accelerator — Interactive Notebooks
+# AI Engineering Reference
 
-**By Sunil Mogadati** | AI Engineer Accelerator
+**From ML fundamentals to production AI systems — concepts, code, and architecture.**
 
-Interactive guides, interview prep, and career resources for aspiring AI Engineers. Every cell is runnable. No slides, no fluff — just code and concepts.
+Building AI systems that work in production requires more than calling an API. It requires understanding the models behind the API, evaluating them honestly, explaining their predictions, and deploying them reliably.
 
----
-
-## The Notebooks
-
-### 1. Python for AI Engineers
-> Comprehensive Python foundation — data types through OOP, logging, testing, and project structure.
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Python_for_AI.ipynb)
-
-### 2. Python for AI — Java Developer's Express Guide
-> Already know Java? Skip the basics. This maps Java concepts to Python in ~2 hours. Covers NumPy, Pandas, Matplotlib, and Scikit-learn.
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/Python_for_AI_Java_Dev_Guide.ipynb)
-
-### 3. Database Essentials for AI Engineers
-> SQL, NoSQL, and Vector Databases — from SQLite basics through ChromaDB semantic search to production patterns. Includes installation guides, real-world scenarios, and hands-on exercises.
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Database_Essentials.ipynb)
-
-### 4. Math for AI Engineers
-> Vectors, cosine similarity, matrices, probability, gradient descent, loss functions, backpropagation, PCA — the math that makes ML make sense.
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Math_for_AI.ipynb)
-
-### 5. Interview Prep
-> Coding exercises, ML theory Q&A, system design walkthroughs, behavioral prep, and study plans. 39 cells, no API keys needed.
-
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Interview_Prep.ipynb)
-
-### 6. Resume Template
-> Composite AI Engineer job posting, annotated resume template, ATS optimization tips, and Accelerator-to-resume skill mapping.
-
-[View Resume Template](AI_Engineer_Resume_Template.md)
+This repository is a practitioner's reference for doing that — organized progressively from foundations to production.
 
 ---
 
-## How to Run
+## Concepts
 
-### Option 1: Google Colab (zero setup)
-Click any "Open in Colab" badge above. All you need is a Google account.
+Structured guides covering the WHY before the HOW. Each topic follows a consistent structure: why it matters → mental models → hello world → how it works → decisions → real-world architecture → system design → security → observability → checklist.
 
-### Option 2: GitHub Codespaces (full VS Code in browser)
-Click **Code** → **Codespaces** → **Create codespace on main**. A full development environment launches in your browser with all dependencies pre-installed.
+| Topic | Status | Start Here |
+|:---|:---|:---|
+| [**Deep Learning**](concepts/Deep_Learning/) | 10 chapters | [Why Deep Learning Matters](concepts/Deep_Learning/01_Why.md) |
+| [**ML Fundamentals**](concepts/ML_Fundamentals/) | 4 chapters | [Why ML Engineering Matters](concepts/ML_Fundamentals/01_Why.md) |
+| [**Data-to-Model Pipeline**](concepts/Data_to_Model_Pipeline.md) | Reference | The end-to-end flow from raw data to predictions |
 
-### Option 3: Run Locally
+---
+
+## Notebooks
+
+Hands-on Jupyter notebooks. Click any Colab badge to open and run — no local setup needed.
+
+### Foundations
+
+| Notebook | Open in Colab |
+|:---|:---|
+| [Python for AI](AI_Engineer_Accelerator_Python_for_AI.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Python_for_AI.ipynb) |
+| [Python — Java Developer's Guide](Python_for_AI_Java_Dev_Guide.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/Python_for_AI_Java_Dev_Guide.ipynb) |
+| [Database Essentials](AI_Engineer_Accelerator_Database_Essentials.ipynb) — SQL, NoSQL, Vector DBs | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Database_Essentials.ipynb) |
+| [Math for AI](AI_Engineer_Accelerator_Math_for_AI.ipynb) — linear algebra, calculus, probability | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Math_for_AI.ipynb) |
+
+### Machine Learning
+
+| Notebook | Open in Colab |
+|:---|:---|
+| [Linear Regression](Step1_Linear_Regression.ipynb) — the simplest ML model | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/Step1_Linear_Regression.ipynb) |
+| [Logistic Regression](Step2_Logistic_Regression.ipynb) — classification, precision/recall | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/Step2_Logistic_Regression.ipynb) |
+| [ML Fundamentals](AI_Engineer_Accelerator_ML_Fundamentals.ipynb) — bias-variance, regularization, SHAP, MLflow | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_ML_Fundamentals.ipynb) |
+
+### Deep Learning
+
+| Notebook | Open in Colab |
+|:---|:---|
+| [Deep Learning & PyTorch](AI_Engineer_Accelerator_Deep_Learning_PyTorch.ipynb) — neural networks, training loops, diagnostics | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Deep_Learning_PyTorch.ipynb) |
+| [CNN Deep Dive](AI_Engineer_Accelerator_Deep_Learning_CNN_DeepDive.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Deep_Learning_CNN_DeepDive.ipynb) |
+| [Regularization](AI_Engineer_Accelerator_Deep_Learning_Regularization.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Deep_Learning_Regularization.ipynb) |
+| [Autoencoders & GANs](AI_Engineer_Accelerator_Deep_Learning_Autoencoders_and_GANs.ipynb) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Deep_Learning_Autoencoders_and_GANs.ipynb) |
+
+### AI Applications
+
+| Notebook | Open in Colab |
+|:---|:---|
+| [RAG from Scratch](AI_Engineer_Accelerator_RAG_from_Scratch.ipynb) — retrieval-augmented generation | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_RAG_from_Scratch.ipynb) |
+| [Agents](AI_Engineer_Accelerator_Agents.ipynb) — ReAct, tool use, multi-step reasoning | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Agents.ipynb) |
+| [Multimodal AI](AI_Engineer_Accelerator_Multimodal_AI.ipynb) — vision, language, audio | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Accelerator_Multimodal_AI.ipynb) |
+
+### Career
+
+| Resource | Link |
+|:---|:---|
+| [Interview Prep](AI_Engineer_Interview_Prep.ipynb) — system design, portfolio, technical Q&A | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/AI_Engineer_Interview_Prep.ipynb) |
+| [Resume Template](AI_Engineer_Resume_Template.md) | [View](AI_Engineer_Resume_Template.md) |
+
+---
+
+## Pipeline Examples
+
+End-to-end pipelines using a call center analytics dataset. The same data powers both the data engineering pipeline and the ML pipeline — mirroring how production systems work.
+
+| Example | What It Demonstrates | Open in Colab |
+|:---|:---|:---|
+| [Analytics Pipeline](examples/simple_pipeline/Analytics_Pipeline.ipynb) | Bronze → Silver → Gold in Pandas | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/examples/simple_pipeline/Analytics_Pipeline.ipynb) |
+| [ML Pipeline](examples/simple_pipeline/ML_Pipeline.ipynb) | Feature engineering → train → evaluate → SHAP | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sunilmogadati/ai-engineer-accelerator/blob/main/examples/simple_pipeline/ML_Pipeline.ipynb) |
+
+---
+
+## Projects
+
+Structured specifications with requirements, deliverables, and evaluation criteria.
+
+| Project | Focus |
+|:---|:---|
+| [P1: ML Predictor](projects/P1_ML_Predictor.md) | Binary classifier with cross-validation, SHAP, experiment tracking |
+| [P1.5: Image Classifier](projects/P1_5_Deep_Learning_Image_Classifier.md) | PyTorch CNN on CIFAR-10 with training diagnostics |
+| [P2: AI Eval & Cost](projects/P2_AI_Eval_Cost.md) | LLM evaluation harness — quality, latency, cost comparison |
+| [P3: RAG Application](projects/P3_RAG_Application.md) | Document Q&A with RAGAS evaluation and prompt injection defense |
+
+---
+
+## The Dataset
+
+All pipelines use a **call center analytics dataset** — synthetic data modeled on production DRTV (Direct Response Television) operations. Includes calls, campaigns, orders, products, and intentional data quality issues (duplicates, timezone bugs, missing values).
+
+The companion [Data Engineering Reference](https://github.com/sunilmogadati/data-engineer-accelerator) builds the data pipeline that feeds these ML models — Bronze → Silver → Gold on GCP.
+
+---
+
+## Running Locally
+
 ```bash
 git clone https://github.com/sunilmogadati/ai-engineer-accelerator.git
 cd ai-engineer-accelerator
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 jupyter notebook
 ```
 
----
-
-## What's Inside
-
-| Notebook | Sections | Code Cells | Audience |
-|----------|----------|------------|----------|
-| Python for AI Engineers | 21 sections | 25+ | Beginners / career switchers |
-| Java Dev Express Guide | 5 parts | 20+ | Experienced Java/Scala developers |
-| Database Essentials | 22 sections | 22+ | All AI engineers |
-| Math for AI Engineers | 14 sections | 12+ | All AI engineers |
-| Interview Prep | 9 sections | 18 | Job seekers |
-| Resume Template | 6 sections | — | Job seekers |
-
-### Topics Covered
-
-**Python Notebook:** Data types, strings, collections, control flow, functions, OOP (4 pillars), error handling, logging, file I/O, imports, virtual environments, pip, testing with pytest, Git basics, SQL overview.
-
-**Java Dev Guide:** Python syntax mapped from Java, list comprehensions, NumPy (vectorized ops, broadcasting), Pandas (DataFrames, groupby, merge), Matplotlib, Scikit-learn (fit/predict pattern).
-
-**Database Notebook:** SQLite (CRUD, JOINs, transactions, parameterized queries), PostgreSQL, ChromaDB (semantic search, metadata filtering), Redis (caching patterns), MongoDB (document model), SQLAlchemy ORM, vector DB trade-offs (ChromaDB vs Pinecone vs Weaviate vs pgvector), AI/ML-specific databases (feature stores, experiment trackers), MCP database tools, connection security.
+Or click any Colab badge above — zero local setup.
 
 ---
 
-## Dependencies
+## Author
 
-**Zero-install (works immediately):**
-- All SQLite cells — `sqlite3` is built into Python
+**Sunil Mogadati** — 25+ years building and leading complex systems end-to-end. Architect-Developer. Cloud, Data & AI. US Patent No. 10,638,891.
 
-**One install:**
-- ChromaDB cells — `pip install chromadb`
-
-**Optional:**
-- SQLAlchemy — `pip install sqlalchemy`
-- python-dotenv — `pip install python-dotenv`
-
-See `requirements.txt` for the full list.
-
----
-
-## License
-
-These materials are part of the AI Engineer Accelerator program.
-
----
-
-**Questions?** Connect with [Sunil Mogadati on LinkedIn](https://linkedin.com/in/sunilmogadati).
+[LinkedIn](https://linkedin.com/in/sunilmogadati) · [Community](https://www.skool.com/workwise) · [GitHub](https://github.com/sunilmogadati)
